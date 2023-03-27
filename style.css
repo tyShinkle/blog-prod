@@ -1,3 +1,5 @@
+/*tyshinkle.blog*/
+
 :root {
     --safe-top: env(safe-area-inset-top);
     --safe-right: env(safe-area-inset-right);
@@ -14,7 +16,7 @@ html {
 
 body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
-    /*test below*/
-    border: 5px solid orange;
     margin: auto;
 }
+
+/*Tyler Shinkle 2023*/
