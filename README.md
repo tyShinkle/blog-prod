@@ -1,1 +1,1 @@
-My Personal Blog - 2023
+# tyshinkle.blog
