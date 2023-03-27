@@ -1,0 +1,14 @@
+*, 
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    /*test below*/
+    border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+}
