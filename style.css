@@ -15,8 +15,6 @@ html {
 body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
     /*test below*/
-    border: 2px solid blue;
-    width: 100vw;
-    height: 100vh;
+    border: 5px solid orange;
     margin: auto;
 }
