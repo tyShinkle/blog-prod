@@ -5,9 +5,9 @@ Status: in-progress
 Author: Ty Shinkle
 
 # Index
-- [Overview](#Overview)  
-- [Data](#Data)  
-- [User Interface](#User%20Interface)  
+1. [Overview](#Overview)  
+2. [Data](#Data)  
+3. [User Interface](#User)  
 
 # Overview
 
