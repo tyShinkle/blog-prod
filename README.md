@@ -1,8 +1,17 @@
 # tyshinkle.blog
 
-status: in-progress  
-author: ty shinkle
+Status: in-progress  
+  
+Author: Ty Shinkle
 
-# index
+# Index
 
-# overview
+# Overview
+
+# Backend Data
+
+# Frontend Data 
+
+# User Interface
+
+# Key Functions
