@@ -7,7 +7,7 @@ Author: Ty Shinkle
 # Index
 - [Overview](#Overview)  
 - [Data](#Data)  
-- [User Interface](<#User Interface>)  
+- [User Interface](#User%20Interface)  
 
 # Overview
 
