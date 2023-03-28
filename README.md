@@ -5,7 +5,7 @@ Status: in-progress
 Author: Ty Shinkle
 
 # Index
-[Overview](Overview)
+[Overview](#Overview)
 
 # Overview
 
