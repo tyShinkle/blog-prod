@@ -10,7 +10,7 @@
 - [User Interface](#User-Interface)
 - [Key Functions](#Key-Functions)
 - [Workflow](#Workflow)
-- [CMS](#CMS)
+- [Content Management](#Content-Management)
 
 # Overview
 
@@ -22,4 +22,4 @@
 
 # Workflow
 
-# CMS
+# Content Management
