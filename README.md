@@ -6,12 +6,12 @@ Author: Ty Shinkle
 
 # Index
 [Overview](#Overview)
+[Data](#Data)
+[User Interface](#User Interface)
 
 # Overview
 
-# Backend Data
-
-# Frontend Data 
+# Data
 
 # User Interface
 
