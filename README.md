@@ -8,6 +8,8 @@ Author: Ty Shinkle
 - [Overview](#Overview)
 - [Data](#Data)
 - [User Interface](#User-Interface)
+- [Key Functions](#Key-Functions)
+- [Workflow](#Workflow)
 
 # Overview
 
