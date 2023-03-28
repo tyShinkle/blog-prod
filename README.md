@@ -1,8 +1,8 @@
 # tyshinkle.blog
 
-#### Status: in-progress
+status: in-progress  
+author: ty shinkle
 
-#### Author: Tyler Shinkle
+# index
 
-# Index
-# Overview
+# overview
