@@ -2,7 +2,7 @@
 
 **Status:** in-progress  
   
-**Author:** Ty Shinkle
+**Author:** Ty Shinkle <tyshinkle@gmail.com>
 
 # Index
 - [Overview](#Overview)
