@@ -1,8 +1,8 @@
 # tyshinkle.blog
 
-Status: in-progress  
+**Status:** in-progress  
   
-Author: Ty Shinkle
+**Author:** Ty Shinkle
 
 # Index
 - [Overview](#Overview)
