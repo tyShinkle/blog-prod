@@ -20,6 +20,10 @@ body {
     margin: auto;
 }
 
+body > * {
+    padding:0 5px;
+}
+
 h1 {
     padding: 1em 0;
     font-family: system-ui;
