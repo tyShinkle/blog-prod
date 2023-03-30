@@ -16,7 +16,17 @@ html {
 
 body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
+    max-width: 50em;
     margin: auto;
+}
+
+h1 {
+    padding: 1em 0;
+    font-family: system-ui;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 /*Tyler Shinkle 2023*/
