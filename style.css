@@ -38,6 +38,15 @@ nav > div {
     right: 5px;
 }
 
+#site-title {
+    width: fit-content;
+    cursor: pointer;
+}
+
+#site-open-button {
+    cursor: pointer;
+}
+
 .post{
     position: relative;
     margin: 0px 10px;
@@ -65,10 +74,8 @@ nav > div {
     transform: translate3d(0, -50%, 0);
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
 }
-
-
-
 
 
 
