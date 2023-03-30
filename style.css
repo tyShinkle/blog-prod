@@ -18,15 +18,17 @@ html {
 body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
     max-width: 60em;
-    margin: 10px auto;
+    margin: auto;
 }
 
 
 h1, 
 h2,
 h3 {
-    padding: 10px 10px;
+    margin: 0px 10px;
+    padding: 10px 0px;
     font-family: monospace;
+    border-bottom: 1px dashed black;
 }
 
 h1 {
