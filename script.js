@@ -2,11 +2,11 @@
 let post = document.getElementsByClassName("post")[0];
 let postTitle = document.getElementsByClassName("post-title-card")[0];
 let postContent = document.getElementsByClassName("post-content")[0];
-let postOpenButton = document.getElementsByClassName("post-open-button")[0];
+let postButton = document.getElementsByClassName("post-button")[0];
 let open = false;
 let fill = true;
 
-postOpenButton.addEventListener("click", testFunction, false);
+postButton.addEventListener("click", testFunction, false);
 post.style.maxHeight = post.offsetHeight + "px";
 
 
