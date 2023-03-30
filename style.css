@@ -19,9 +19,25 @@ body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
     max-width: 60em;
     margin: auto;
+    font-family: monospace;
 }
 
+nav {
+    margin: 0px 10px;
+    padding: 10px 0px;
+    position: relative;
+    border-bottom: 1px dashed black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
+nav > div {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+}
+
+/* test top
 h1, 
 h2,
 h3 {
@@ -48,5 +64,5 @@ p {
     line-height: 1.5em;
     font-family: monospace;
 }
-
+test bottom */
 /*Tyler Shinkle 2023*/
