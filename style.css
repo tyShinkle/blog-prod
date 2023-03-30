@@ -17,32 +17,37 @@ html {
 
 body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
-    max-width: 50em;
+    max-width: 60em;
     margin: auto;
 }
+
 
 h1, 
 h2,
 h3 {
-    padding: 15px 10px;
-    font-family: system-ui, sans-serif;
+    /*padding: 15px 10px;*/
+    font-family: monospace;
 }
 
 h1 {
+    padding: 15px 15px;
     font-size: 1.5em;
 }
 
 h2 {
+    padding: 15px 30px;
     font-size: 1.25em;
 }
 
 h3{
+    padding: 15px 45px;
     font-size: 1em;
 }
 
 p {
-    padding: 0 10px;
+    padding: 0 60px;
     line-height: 1.5em;
+    font-family: monospace;
 }
 
 /*Tyler Shinkle 2023*/
