@@ -5,7 +5,7 @@
     --safe-right: env(safe-area-inset-right);
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
-    --lite-font: #3f3f3f;
+    --lite-font: #121212;
 }
 
 *, 
