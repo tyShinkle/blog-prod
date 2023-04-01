@@ -6,8 +6,8 @@
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
     --lite-font: #121212;
-    --dark-font: #ddd;
-    --lite-background: #ddd;
+    --dark-font: #eee;
+    --lite-background: #eee;
     --dark-background: #121212;
 }
 
