@@ -1,7 +1,7 @@
 export const postData = `[
     {
         "postTitle":"Build a CRUD API with Lambda Functions and DynamoDB", 
-        "postDate":"March 31, 2023", 
+        "postDate":"03.31.2023", 
         "postTags":["#node","#aws","#api"], 
         "postBody":[
             {  
@@ -16,7 +16,7 @@ export const postData = `[
     },
     {
         "postTitle":"Git Revert Examples",
-        "postDate":"April 1, 2023",
+        "postDate":"04.01.2023",
         "postTags":["#basics", "#git"], 
         "postBody":[
             {
@@ -31,7 +31,7 @@ export const postData = `[
     }, 
     {
         "postTitle":"Building a LAMP Server at Home",
-        "postDate":"April 2, 2023",
+        "postDate":"04.02.2023",
         "postTags":["#linux", "#apache", "#sql", "#php"], 
         "postBody":[
             {
@@ -46,7 +46,7 @@ export const postData = `[
     }, 
     {
         "postTitle":"Mastering CSS Grid",
-        "postDate":"April 4, 2023",
+        "postDate":"04.04.2023",
         "postTags":["#css", "#grid"], 
         "postBody":[
             {
