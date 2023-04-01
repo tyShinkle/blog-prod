@@ -64,13 +64,7 @@ function addButton(postIndex) {
     postButton.classList.add("post-button");
     postButton.classList.add("toggleButton");
     postButton.setAttribute("id", "postButton" + postIndex);
-    let postPlus = document.createElement("span");
-    postPlus.textContent = "+";
-    postPlus.classList.add("plusButton");
-    postPlus.setAttribute("id", "postPlus" + postIndex);
-    postButton.appendChild(postPlus);
-    let postMinus = document.createTextNode("-");
-    postButton.appendChild(postMinus);
+    postButton.innerText = "+"
     postButton.addEventListener("click", togglePost, false);
     postButton.open = false;
     postButton.fill = true;
@@ -88,18 +82,19 @@ function setMaxHeight(postIndex) {
 function togglePost(e) {
     let targetIndex = e.currentTarget.postIndex;
     let postParent = document.getElementsByClassName("post")[targetIndex];
+    let activeButton = document.getElementById("postButton" + targetIndex);
     if(!e.currentTarget.open){
         if(e.currentTarget.fill){
             postParent.appendChild(fillPost(targetIndex));
             e.currentTarget.fill = false;
         }
         postParent.style.maxHeight = postParent.offsetHeight + document.getElementById("postContentDiv" + targetIndex).offsetHeight + "px";
-        document.getElementById("postPlus" + targetIndex).style.opacity = "0";
+        activeButton.innerText = "-";
         e.currentTarget.open = true;
     }
     else {
         postParent.style.maxHeight = document.getElementById("postTitleCard" + targetIndex).offsetHeight + 100 + "px";
-        document.getElementById("postPlus" + targetIndex).style.opacity = "1";
+        activeButton.innerText = "+";
         e.currentTarget.open = false;
     }
 }

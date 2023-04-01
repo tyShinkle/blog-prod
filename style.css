@@ -69,7 +69,7 @@ nav > div {
 
 .post-tags {
     max-width: 90%;
-    margin-bottom: 15px;
+    margin: 20px 0px 35px 0px;
     font-style: italic;
 }
 
@@ -96,12 +96,6 @@ nav > div {
 
 .toggleButton {
     padding: 10px;
-}
-
-.plusButton{
-    position: relative;
-    left: 50%;
-    transition: opacity 0.5s; 
 }
 
 .post-content {
