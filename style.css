@@ -76,6 +76,8 @@ nav > div {
 
 .post-tag {
     margin-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 .post-tag:hover {
