@@ -17,7 +17,7 @@ export const postData = `[
     {
         "postTitle":"Git Revert Examples",
         "postDate":"04.01.2023",
-        "postTags":["#basics", "#git"], 
+        "postTags":["#git"], 
         "postBody":[
             {
                 "elementType":"heading",
