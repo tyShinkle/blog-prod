@@ -1,7 +1,5 @@
 import {postData} from "./postData.js";
-
 const posts = JSON.parse(postData);
-
 let mainBody = document.getElementsByTagName("main")[0];
 
 function createPostCards() {
@@ -120,7 +118,8 @@ function openPost(e) {
         postParent.style.maxHeight = postParent.offsetHeight + document.getElementById("postContentDiv" + targetIndex).offsetHeight + "px";
         e.currentTarget.open = true;
         
-    }else {
+    }
+    else {
         postParent.style.maxHeight = document.getElementById("postTitleCard" + e.currentTarget.postIndex).offsetHeight + 30 + "px";
         e.currentTarget.open = false;
     }
