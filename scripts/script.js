@@ -98,7 +98,7 @@ function togglePost(e) {
         e.currentTarget.open = true;
     }
     else {
-        postParent.style.maxHeight = document.getElementById("postTitleCard" + e.currentTarget.postIndex).offsetHeight + 30 + "px";
+        postParent.style.maxHeight = document.getElementById("postTitleCard" + targetIndex).offsetHeight + 100 + "px";
         document.getElementById("postPlus" + targetIndex).style.opacity = "1";
         e.currentTarget.open = false;
     }
