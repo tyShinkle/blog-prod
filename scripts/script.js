@@ -47,7 +47,7 @@ function addTags(postIndex) {
 function buildTagString(postIndex) {
     let baseString = "";
     for(let i=0; i < posts[postIndex].postTags.length; i++){
-        baseString += posts[postIndex].postTags[i]+ " ";
+        baseString += posts[postIndex].postTags[i]+ "  ";
     }
     return baseString;
 }
