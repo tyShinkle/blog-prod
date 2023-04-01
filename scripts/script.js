@@ -39,17 +39,13 @@ function addTags(postIndex) {
     let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
     let postTags = document.createElement("div");
     postTags.classList.add("post-tags");
-    postTags.textContent = buildTagString(postIndex);
-    targetPostTitleCard.appendChild(postTags);
-}
-
-//construct string out of postTags array
-function buildTagString(postIndex) {
-    let baseString = "";
-    for(let i=0; i < posts[postIndex].postTags.length; i++){
-        baseString += posts[postIndex].postTags[i]+ "  ";
+    for(let i = 0; i < posts[postIndex].postTags.length; i++){
+        let s = document.createElement("span");
+        s.classList.add("post-tag");
+        s.textContent = posts[postIndex].postTags[i];
+        postTags.appendChild(s);
     }
-    return baseString;
+    targetPostTitleCard.appendChild(postTags);
 }
 
 //add date to post card
@@ -66,9 +62,16 @@ function addButton(postIndex) {
     let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
     let postButton = document.createElement("div");
     postButton.classList.add("post-button");
+    postButton.classList.add("toggleButton");
     postButton.setAttribute("id", "postButton" + postIndex);
-    postButton.textContent = "+";
-    postButton.addEventListener("click", openPost, false);
+    let postPlus = document.createElement("span");
+    postPlus.textContent = "+";
+    postPlus.classList.add("plusButton");
+    postPlus.setAttribute("id", "postPlus" + postIndex);
+    postButton.appendChild(postPlus);
+    let postMinus = document.createTextNode("-");
+    postButton.appendChild(postMinus);
+    postButton.addEventListener("click", togglePost, false);
     postButton.open = false;
     postButton.fill = true;
     postButton.postIndex = postIndex;
@@ -81,29 +84,36 @@ function setMaxHeight(postIndex) {
     p.style.maxHeight = p.offsetHeight + "px";
 }
 
-//open post / add content
-function openPost(e) {
+//open and close post
+function togglePost(e) {
     let targetIndex = e.currentTarget.postIndex;
     let postParent = document.getElementsByClassName("post")[targetIndex];
     if(!e.currentTarget.open){
         if(e.currentTarget.fill){
-            let postContentDiv = document.createElement("div");
-            postContentDiv.classList.add("post-content");
-            postContentDiv.setAttribute("id", "postContentDiv" + targetIndex);
-            for(let i = 0; i < posts[targetIndex].postBody.length; i++){
-                let childToBe = buildElement(posts[targetIndex].postBody[i]);
-                postContentDiv.appendChild(childToBe);
-            }
-            postParent.appendChild(postContentDiv);
+            postParent.appendChild(fillPost(targetIndex));
             e.currentTarget.fill = false;
         }
         postParent.style.maxHeight = postParent.offsetHeight + document.getElementById("postContentDiv" + targetIndex).offsetHeight + "px";
+        document.getElementById("postPlus" + targetIndex).style.opacity = "0";
         e.currentTarget.open = true;
     }
     else {
         postParent.style.maxHeight = document.getElementById("postTitleCard" + e.currentTarget.postIndex).offsetHeight + 30 + "px";
+        document.getElementById("postPlus" + targetIndex).style.opacity = "1";
         e.currentTarget.open = false;
     }
+}
+
+//create post body 
+function fillPost(postIndex) {
+    let postContentDiv = document.createElement("div");
+    postContentDiv.classList.add("post-content");
+    postContentDiv.setAttribute("id", "postContentDiv" + postIndex);
+    for (let i = 0; i < posts[postIndex].postBody.length; i++) {
+        let childToBe = buildElement(posts[postIndex].postBody[i]);
+        postContentDiv.appendChild(childToBe);
+    }
+    return postContentDiv;
 }
 
 //build elements off of post data

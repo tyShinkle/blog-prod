@@ -34,8 +34,9 @@ nav {
 
 nav > div {
     position: absolute;
-    top: 15px; 
-    right: 5px;
+    top: 50%; 
+    right: 0px;
+    transform: translate3d(0, -50%, 0);
 }
 
 #site-title {
@@ -73,14 +74,33 @@ nav > div {
     font-style: italic;
 }
 
+.post-tag {
+    margin-right:15px;
+}
+
+.post-tag:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
 .post-button {
     position: absolute;
-    right: 0px;
+    right: -5px;
     top: 50%;
     transform: translate3d(0, -50%, 0);
     font-size: 1.25em;
     font-weight: bold;
     cursor: pointer;
+}
+
+.toggleButton {
+    padding: 10px;
+}
+
+.plusButton{
+    position: relative;
+    left: 50%;
+    transition: opacity 0.5s; 
 }
 
 .post-content > * {
