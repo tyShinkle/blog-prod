@@ -5,6 +5,7 @@
     --safe-right: env(safe-area-inset-right);
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
+    --lite-font: #3f3f3f;
 }
 
 *, 
@@ -14,6 +15,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
+    color: var(--lite-font);
 }
 
 body {
@@ -27,7 +29,7 @@ nav {
     margin: 0px 10px;
     padding: 25px 5px;
     position: relative;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--lite-font);
     font-size: 1.25em;
     font-weight: bold;
 }
@@ -81,7 +83,7 @@ nav > div {
 
 .post-tag:hover {
     cursor: pointer;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--lite-font);
 }
 
 .post-button {
