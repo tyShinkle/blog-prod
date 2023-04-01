@@ -98,29 +98,29 @@ function setMaxHeight(postIndex) {
 
 //open post / add content
 function openPost(e) {
-
     let postParent = document.getElementsByClassName("post")[e.currentTarget.postIndex];
+    let targetIndex = e.currentTarget.postIndex;
 
     if(!e.currentTarget.open){
         
         if(e.currentTarget.fill){
-
             let postContentDiv = document.createElement("div");
             postContentDiv.classList.add("post-content");
-            postContentDiv.setAttribute("id", "postContentDiv" + e.currentTarget.postIndex);
+            postContentDiv.setAttribute("id", "postContentDiv" + targetIndex);
 
-            for(let i=0; i<posts[e.currentTarget.postIndex].postBody.length; i++){
-                let childToBe = buildElement(posts[e.currentTarget.postIndex].postBody[i]);
+            for(let i = 0; i < posts[targetIndex].postBody.length; i++){
+                let childToBe = buildElement(posts[targetIndex].postBody[i]);
                 postContentDiv.appendChild(childToBe);
             }
+            
             postParent.appendChild(postContentDiv);
             e.currentTarget.fill = false;
         }
-        postParent.style.maxHeight = postParent.offsetHeight + document.getElementById("postContentDiv" + e.currentTarget.postIndex).offsetHeight + "px";
+        
+        postParent.style.maxHeight = postParent.offsetHeight + document.getElementById("postContentDiv" + targetIndex).offsetHeight + "px";
         e.currentTarget.open = true;
+        
     }else {
-        //!set maxheight to the title cards previous height 
-        console.log("test");
         postParent.style.maxHeight = document.getElementById("postTitleCard" + e.currentTarget.postIndex).offsetHeight + 30 + "px";
         e.currentTarget.open = false;
     }
