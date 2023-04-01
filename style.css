@@ -109,6 +109,10 @@ nav > div {
     padding-top: 15px;
 }
 
+.post-content > h3 {
+    font-size: 1.025em;
+}
+
 .post-content > p {
     line-height: 1.5em;
 }
