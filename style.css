@@ -28,7 +28,7 @@ nav {
     padding: 15px 5px;
     position: relative;
     border-bottom: 1px dashed black;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 
@@ -52,6 +52,8 @@ nav > div {
     margin: 0px 10px;
     padding: 15px 5px;
     border-bottom: 1px dashed black;
+    overflow:hidden;
+    transition: max-height 0.5s;
 }
 
 .post-title-card {
@@ -71,58 +73,20 @@ nav > div {
     font-style: italic;
 }
 
-.post-open-button {
+.post-button {
     position: absolute;
-    right: 5px;
+    right: 0px;
     top: 50%;
     transform: translate3d(0, -50%, 0);
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* test top
-h1, 
-h2,
-h3 {
-    margin: 0px 10px;
-    padding: 10px 0px;
-    font-family: monospace;
-    border-bottom: 1px dashed black;
+.post-content > * {
+    padding-top: 15px;
 }
 
-h1 {
-    font-size: 1.5em;
-}
-
-h2 {
-    font-size: 1.25em;
-}
-
-h3{
-    font-size: 1em;
-}
-
-p {
-    padding: 10px 10px;
+.post-content > p {
     line-height: 1.5em;
-    font-family: monospace;
 }
-test bottom */
-/*Tyler Shinkle 2023*/
