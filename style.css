@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-    margin: 0px 10px;
+    margin: 0px 10px 50px 10px;
     padding: 25px 5px;
     position: relative;
     border-bottom: 2px solid var(--lite-font);
@@ -56,8 +56,8 @@ nav > div {
 
 .post{
     position: relative;
-    margin: 0px 10px;
-    padding: 60px 5px;
+    margin: 0px 10px 150px 10px;
+    padding: 0px 5px;
     overflow:hidden;
     transition: max-height 0.5s;
 }
@@ -69,13 +69,12 @@ nav > div {
 .post-title {
     font-size: 1.25em;
     font-weight: bold;
-    padding-bottom: 15px;
     max-width: 90%;
 }
 
 .post-tags {
     max-width: 90%;
-    margin: 20px 0px 35px 0px;
+    margin: 25px 0px;
     font-style: italic;
 }
 

@@ -93,7 +93,7 @@ function togglePost(e) {
         e.currentTarget.open = true;
     }
     else {
-        postParent.style.maxHeight = document.getElementById("postTitleCard" + targetIndex).offsetHeight + 120 + "px";
+        postParent.style.maxHeight = document.getElementById("postTitleCard" + targetIndex).offsetHeight + "px";
         activeButton.innerText = "+";
         e.currentTarget.open = false;
     }
