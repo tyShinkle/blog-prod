@@ -29,5 +29,6 @@
 1. redraw on orientation change / resize  
 2. add dropdown for search / dark mode / keywords  
 3. add tag click functionality  
-4. scroll post to top on open
-5. routing / seo optimization
+4. whitespace / flow
+5. footer  
+6. content types (code / img)
