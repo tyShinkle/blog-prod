@@ -30,4 +30,5 @@
 2. add dropdown for search / dark mode / keywords  
 3. add tag click functionality  
 4. whitespace / flow
-5. clean-up
+5. footer  
+6. content types (code / img)
