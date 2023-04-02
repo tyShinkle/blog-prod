@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-    margin: 20px 10px;
+    margin: 20px 10px 0px 10px;
     position: relative;
     font-size: 1.25em;
     font-weight: bold;
@@ -54,7 +54,7 @@ nav > div {
 
 .post{
     position: relative;
-    margin: 50px 10px;
+    margin: 80px 10px;
     overflow:hidden;
     transition: max-height 0.5s;
 }
@@ -100,7 +100,7 @@ nav > div {
 }
 
 .post-content > * {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .post-content > h3 {
