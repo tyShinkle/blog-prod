@@ -35,7 +35,7 @@ body {
 nav {
     position: relative;
     margin: 20px 10px 0px 10px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -62,6 +62,7 @@ nav {
     padding: 5px;
     border: 2px solid black;
     font-family: monospace;
+    font-size: 1rem;
     color: var(--lite-font);
 }
 
@@ -86,7 +87,7 @@ nav {
 }
 
 .post-title {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
     max-width: 90%;
 }
@@ -98,6 +99,7 @@ nav {
 }
 
 .post-tag {
+    font-size: 1rem;
     margin-right:25px;
     padding: 5px 0px;
 }
@@ -107,12 +109,16 @@ nav {
     border-bottom: 1px solid var(--lite-font);
 }
 
+.post-date {
+    font-size: 1rem;
+}
+
 .post-button {
     position: absolute;
     right: 0px;
     top: 50%;
     transform: translate3d(0, -50%, 0);
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -126,10 +132,11 @@ nav {
 }
 
 .post-content > h3 {
-    font-size: 1.025em;
+    font-size: 1.025rem;
 }
 
 .post-content > p {
+    font-size: 1rem;
     line-height: 1.5em;
 }
 
