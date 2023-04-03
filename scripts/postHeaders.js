@@ -64,8 +64,8 @@ function addButton(postIndex, postData) {
     postButton.setAttribute("id", "postButton" + postIndex);
     postButton.innerText = "+"
     postButton.addEventListener("click", togglePost, false);
-    postButton.open = false;
-    postButton.fill = true;
+    postButton.opened = false;
+    postButton.filled = false;
     postButton.postIndex = postIndex;
     postButton.postBody = postData.postBody;
     targetPostTitleCard.appendChild(postButton);

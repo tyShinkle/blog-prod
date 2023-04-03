@@ -1,5 +1,6 @@
 import {postData} from "./postData.js";
 import {loadPostHeaders} from "./postHeaders.js";
+import { empowerNav } from "./navLogic.js";
 
 const posts = JSON.parse(postData);
 
@@ -7,6 +8,7 @@ function entryPoint() {
     for(let i = 0; i < posts.length; i++){
         loadPostHeaders(i, posts[i]);
     }
+    empowerNav();
 }
 
 entryPoint();

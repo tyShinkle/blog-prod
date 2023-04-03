@@ -3,19 +3,19 @@ export function togglePost(e) {
     let targetIndex = e.currentTarget.postIndex;
     let postParent = document.querySelector("#post" + targetIndex);
     let activeButton = document.querySelector("#postButton" + targetIndex);
-    if (!e.currentTarget.open) {
-        if (e.currentTarget.fill) {
+    if (!e.currentTarget.opened) {
+        if (!e.currentTarget.filled) {
             postParent.appendChild(fillPost(targetIndex, e.currentTarget.postBody));
-            e.currentTarget.fill = false;
+            e.currentTarget.filled = true;
         }
         postParent.style.maxHeight = postParent.offsetHeight + document.querySelector("#postContentDiv" + targetIndex).offsetHeight + "px";
         activeButton.innerText = "-";
-        e.currentTarget.open = true;
+        e.currentTarget.opened = true;
     }
     else {
         postParent.style.maxHeight = document.querySelector("#postTitleCard" + targetIndex).offsetHeight + "px";
         activeButton.innerText = "+";
-        e.currentTarget.open = false;
+        e.currentTarget.opened = false;
     }
 }
 
