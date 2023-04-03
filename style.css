@@ -53,7 +53,7 @@ nav {
 }
 
 #menu-content {
-    padding: 55px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 #search-bar {
@@ -76,12 +76,12 @@ nav {
 }
 
 main {
-    padding-top: 55px;
+    padding-top: 50px;
 }
 
 .post{
     position: relative;
-    margin: 0px 10px 100px 10px;
+    margin: 0px 10px 50px 10px;
     overflow:hidden;
     transition: max-height 0.5s;
 }
@@ -98,7 +98,7 @@ main {
 
 .post-tags {
     max-width: 90%;
-    margin: 20px 0px;
+    padding: 15px 0px;
     font-style: italic;
 }
 
