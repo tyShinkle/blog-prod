@@ -69,10 +69,12 @@ nav {
     font-family: monospace;
     font-size: 1rem;
     color: var(--lite-font);
+    box-shadow: -2.5px 2.5px 2px grey;
 }
 
-#search-bar:hover {
-    box-shadow: -5px 5px grey;
+#search-bar:hover,
+#search-bar:focus {
+    box-shadow: -5px 5px 5px grey;
 }
 
 #filter-bar {
@@ -87,11 +89,12 @@ nav {
     font-family: monospace;
     font-size: 1rem;
     color: var(--lite-font);
+    box-shadow: -2.5px 2.5px 2px grey;
 }
 
 #filter-bar:hover {
     cursor: pointer;
-    box-shadow: -5px 5px grey;
+    box-shadow: -5px 5px 5px grey;
 }
 
 #site-title {
@@ -114,7 +117,7 @@ nav {
 
 .post:hover{
     cursor:pointer;
-    box-shadow: -5px 5px 2px grey;
+    box-shadow: -5px 5px 5px grey;
 }
 
 .post-title-card {
