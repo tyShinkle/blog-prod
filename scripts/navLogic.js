@@ -16,7 +16,7 @@ function toggleNav() {
             addNavElements();
             menuContainer.filled = true;
         }
-        menuContainer.style.maxHeight = menuContent.offsetHeight + "px";
+        menuContainer.style.maxHeight = menuContent.offsetHeight + 20 + "px";
         menuContainer.opened = true;
         navButton.textContent = "-"
     }
