@@ -48,7 +48,7 @@ nav {
 #nav-button {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: -5px;
     transform: translate3d(0, -50%, 0);
     cursor: pointer;
 }
@@ -70,7 +70,7 @@ nav {
 
 #site-title {
     position: relative;
-    left: 10px;
+    left: 5px;
     width: fit-content;
     cursor: pointer;
 }
@@ -97,11 +97,9 @@ nav {
 .post-title {
     font-size: 1.25rem;
     font-weight: bold;
-    max-width: 90%;
 }
 
 .post-tags {
-    max-width: 90%;
     padding: 15px 0px;
     font-style: italic;
 }

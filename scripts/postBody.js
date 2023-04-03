@@ -5,16 +5,14 @@ export function togglePost(e) {
     let activeButton = document.querySelector("#postButton" + targetIndex);
     if (!e.currentTarget.opened) {
         if (!e.currentTarget.filled) {
-            postParent.appendChild(fillPost(targetIndex, e.currentTarget.postBody));
+            postParent.appendChild(fillPost(targetIndex, e.currentTarget.postData.postBody));
             e.currentTarget.filled = true;
         }
         postParent.style.maxHeight = postParent.offsetHeight + document.querySelector("#postContentDiv" + targetIndex).offsetHeight + "px";
-        activeButton.innerText = "-";
         e.currentTarget.opened = true;
     }
     else {
         postParent.style.maxHeight = document.querySelector("#postTitleCard" + targetIndex).offsetHeight + 20 + "px";
-        activeButton.innerText = "+";
         e.currentTarget.opened = false;
     }
 }

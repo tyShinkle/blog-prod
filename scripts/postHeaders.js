@@ -3,20 +3,22 @@ let mainBody = document.getElementsByTagName("main")[0];
 
 //loadPostHeaders
 export function loadPostHeaders(postIndex, postData) {
-    addPostContainers(postIndex);
+    addPostContainers(postIndex, postData);
     addTitle(postIndex, postData);
     addTags(postIndex, postData);
     addDate(postIndex, postData);
-    addButton(postIndex, postData);
     setMaxHeight(postIndex);
 }
 
 //add container div's
-function addPostContainers(postIndex) {
+function addPostContainers(postIndex, postData) {
     let postDiv = document.createElement("div");
     let postTitleDiv = document.createElement("div");
     postDiv.classList.add("post");
     postDiv.setAttribute("id", "post" + postIndex);
+    postDiv.addEventListener("click", togglePost, "false");
+    postDiv.postIndex = postIndex;
+    postDiv.postData = postData
     postTitleDiv.classList.add("post-title-card");
     postTitleDiv.setAttribute("id", "postTitleCard" + postIndex);
     postDiv.appendChild(postTitleDiv);
@@ -53,22 +55,6 @@ function addDate(postIndex, postData) {
     postDate.classList.add("post-date");
     postDate.textContent = postData.postDate;
     targetPostTitleCard.appendChild(postDate);
-}
-
-//add button to each post card
-function addButton(postIndex, postData) {
-    let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
-    let postButton = document.createElement("div");
-    postButton.classList.add("post-button");
-    postButton.classList.add("toggleButton");
-    postButton.setAttribute("id", "postButton" + postIndex);
-    postButton.innerText = "+"
-    postButton.addEventListener("click", togglePost, false);
-    postButton.opened = false;
-    postButton.filled = false;
-    postButton.postIndex = postIndex;
-    postButton.postBody = postData.postBody;
-    targetPostTitleCard.appendChild(postButton);
 }
 
 //set max height for open / close
