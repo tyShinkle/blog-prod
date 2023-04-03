@@ -1,29 +1,28 @@
-let navContainer = document.querySelector("#nav-container");
-let navBar = document.querySelector("#nav-bar");
 let navButton = document.querySelector("#nav-button");
+let menuContainer = document.querySelector("#menu");
 let menuContent;
 let searchBar;
+let filterBar;
 
 export function empowerNav() {
-    navContainer.style.maxHeight = navBar.offsetHeight + "px";
     navButton.addEventListener("click", toggleNav, false);
-    navContainer.opened = false;
-    navContainer.filled = false;
+    menuContainer.opened = false;
+    menuContainer.filled = false;
 }
 
 function toggleNav() {
-    if(!navContainer.opened){
-        if(!navContainer.filled){
+    if(!menuContainer.opened){
+        if(!menuContainer.filled){
             addNavElements();
-            navContainer.filled = true;
+            menuContainer.filled = true;
         }
-        navContainer.style.maxHeight = navBar.offsetHeight + menuContent.offsetHeight + "px";
-        navContainer.opened = true;
+        menuContainer.style.maxHeight = menuContent.offsetHeight + "px";
+        menuContainer.opened = true;
         navButton.textContent = "-"
     }
     else {
-        navContainer.style.maxHeight = navBar.offsetHeight + "px";
-        navContainer.opened = false;
+        menuContainer.style.maxHeight = "0px";
+        menuContainer.opened = false;
         navButton.textContent = "+"
     }
 }
@@ -32,7 +31,8 @@ function addNavElements() {
     menuContent = document.createElement("div");
     menuContent.setAttribute("id", "menu-content");
     addSearchBar();
-    navContainer.appendChild(menuContent);
+    addFilterBar();
+    menuContainer.appendChild(menuContent);
 }
 
 function addSearchBar() {
@@ -40,4 +40,13 @@ function addSearchBar() {
     searchBar.setAttribute("id", "search-bar");
     searchBar.placeholder = "search...";
     menuContent.appendChild(searchBar);
+}
+
+function addFilterBar() {
+    let tagList = document.createElement("option");
+    tagList.text = "Filter By Tags";
+    filterBar = document.createElement("select");
+    filterBar.setAttribute("id", "filter-bar");
+    filterBar.appendChild(tagList);
+    menuContent.appendChild(filterBar);
 }
