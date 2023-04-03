@@ -28,6 +28,8 @@ body {
     max-width: 60em;
     margin: auto;
     font-family: monospace;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 nav {
