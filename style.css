@@ -90,10 +90,8 @@ nav {
 }
 
 #filter-bar:hover {
-    box-shadow: -5px 5px grey;
-}
-#filter-bar:hover {
     cursor: pointer;
+    box-shadow: -5px 5px grey;
 }
 
 #site-title {
@@ -111,11 +109,12 @@ nav {
     transition: max-height 0.5s;
     border: 2px solid black;
     border-radius: 5px;
+    box-shadow: -2.5px 2.5px 2px grey;
 }
 
 .post:hover{
     cursor:pointer;
-    box-shadow: -5px 5px grey;
+    box-shadow: -5px 5px 2px grey;
 }
 
 .post-title-card {
