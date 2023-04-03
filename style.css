@@ -9,7 +9,6 @@
     --dark-font: #eee;
     --lite-background: #eee;
     --dark-background: #121212;
-    --red : red;
 }
 
 *, 
@@ -34,11 +33,12 @@ body {
 
 nav {
     position: relative;
-    margin: 30px 10px 0px 10px;
+    margin: 30px 10px;
     font-size: 1.25rem;
     font-weight: bold;
     overflow: hidden;
     transition: max-height 0.5s;
+    background-color: transparent;
 }
 
 #nav-bar {
@@ -48,12 +48,13 @@ nav {
 #nav-button {
     position: absolute;
     top: 50%;
-    right: 0px;
+    right: 10px;
     transform: translate3d(0, -50%, 0);
+    cursor: pointer;
 }
 
 #menu-content {
-    padding: 50px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
 }
 
 #search-bar {
@@ -61,29 +62,27 @@ nav {
     max-width: 20em;
     padding: 5px;
     border: 2px solid black;
+    border-radius: 5px;
     font-family: monospace;
     font-size: 1rem;
     color: var(--lite-font);
 }
 
 #site-title {
+    position: relative;
+    left: 10px;
     width: fit-content;
     cursor: pointer;
 }
 
-#nav-button {
-    cursor: pointer;
-}
-
-main {
-    padding-top: 50px;
-}
-
 .post{
     position: relative;
-    margin: 0px 10px 50px 10px;
+    padding: 10px;
+    margin: 10px;
     overflow:hidden;
     transition: max-height 0.5s;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .post-title-card {
