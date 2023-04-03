@@ -48,7 +48,7 @@ nav {
 #nav-button {
     position: absolute;
     top: 50%;
-    right: -5px;
+    right: 0px;
     transform: translate3d(0, -50%, 0);
     cursor: pointer;
 }
@@ -70,7 +70,7 @@ nav {
 
 #site-title {
     position: relative;
-    left: 5px;
+    left: 10px;
     width: fit-content;
     cursor: pointer;
 }
