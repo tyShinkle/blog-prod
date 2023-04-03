@@ -60,7 +60,7 @@ nav {
 #search-bar {
     width: 100%;
     max-width: 20em;
-    padding: 5px;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
     font-family: monospace;
@@ -83,6 +83,11 @@ nav {
     transition: max-height 0.5s;
     border: 2px solid black;
     border-radius: 5px;
+}
+
+.post:hover{
+    cursor:pointer;
+    box-shadow: -5px 5px grey;
 }
 
 .post-title-card {
