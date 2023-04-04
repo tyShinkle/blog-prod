@@ -40,7 +40,7 @@ function addNavElements() {
 function addSearchBar() {
     searchBar = document.createElement("input");
     searchBar.setAttribute("id", "search-bar");
-    searchBar.placeholder = "\u2315 search...";
+    searchBar.placeholder = "# Search...";
     menuContent.appendChild(searchBar);
 }
 
