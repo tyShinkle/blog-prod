@@ -49,7 +49,7 @@ function addFilterBar() {
     filterHeader = document.createElement("div");
     filterBar.setAttribute("id", "filter-bar");
     filterHeader.setAttribute("id", "filter-header");
-    filterHeader.textContent = "Filter by #Tags";
+    filterHeader.textContent = "Tag Filter";
     filterBar.appendChild(filterHeader);
     menuContent.appendChild(filterBar);
 }
