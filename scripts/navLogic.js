@@ -4,7 +4,7 @@ let menuContent;
 let searchBar;
 let filterBar;
 let filterHeader;
-//let filterContent;
+let filterContent;
 
 export function empowerNav() {
     navButton.addEventListener("click", toggleNav, false);
@@ -40,16 +40,29 @@ function addNavElements() {
 function addSearchBar() {
     searchBar = document.createElement("input");
     searchBar.setAttribute("id", "search-bar");
-    searchBar.placeholder = "search...";
+    searchBar.placeholder = "\u2315 search...";
     menuContent.appendChild(searchBar);
 }
 
 function addFilterBar() {
     filterBar = document.createElement("div");
     filterHeader = document.createElement("div");
+    filterContent = document.createElement("div");
     filterBar.setAttribute("id", "filter-bar");
     filterHeader.setAttribute("id", "filter-header");
-    filterHeader.textContent = "Tag Filter";
+    filterContent.setAttribute("id", "filter-content");
+    filterHeader.textContent = "# Filter";
+    filterBar.addEventListener("click", toggleFilter, false)
     filterBar.appendChild(filterHeader);
     menuContent.appendChild(filterBar);
+}
+
+function toggleFilter() {
+    fillFilter();
+    //expand filter bar
+}
+
+function fillFilter() {
+    //add tags to flex container
+    console.log("test");
 }
