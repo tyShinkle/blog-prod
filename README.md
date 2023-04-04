@@ -27,8 +27,11 @@
 # TO DO
 
 1. redraw on orientation change / resize  
-2. add dropdown for search / dark mode / keywords  
-3. add tag click functionality  
-4. whitespace / flow
-5. footer  
-6. content types (code / img)
+2. put search bar in div for box-shadow / remove default stylings  
+3. stylings for tag filter as well / load tags
+4. add tag click functionality  
+5. add search functionality   
+7. add dark mode / color schemes
+8. create / add menu icons (search, filter etc...)  
+9. footer  
+10. content types (code / img)  
