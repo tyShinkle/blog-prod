@@ -27,8 +27,6 @@ body {
     max-width: 60em;
     margin: auto;
     font-family: monospace;
-    opacity: 0;
-    transition: opacity 1s;
 }
 
 nav {
@@ -46,8 +44,16 @@ nav {
     position: absolute;
     top: 50%;
     right: 0px;
+    padding: 5px 10px;
     transform: translate3d(0, -50%, 0);
     cursor: pointer;
+    border: 2px solid var(--lite-font);
+    border-radius: 5px;
+    box-shadow: -2.5px 2.5px 2px grey;
+}
+
+#nav-button:hover {
+    box-shadow: -5px 5px 5px grey;
 }
 
 #menu {
@@ -147,10 +153,6 @@ nav {
 
 .post-date {
     font-size: 1rem;
-}
-
-.toggleButton {
-    padding: 10px;
 }
 
 .post-content {

@@ -9,7 +9,6 @@ function entryPoint() {
         loadPostHeaders(i, posts[i]);
     }
     empowerNav();
-    document.querySelector("body").style.opacity = 1;
 }
 
 entryPoint();
