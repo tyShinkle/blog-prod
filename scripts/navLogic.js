@@ -3,6 +3,8 @@ let menuContainer = document.querySelector("#menu");
 let menuContent;
 let searchBar;
 let filterBar;
+let filterHeader;
+//let filterContent;
 
 export function empowerNav() {
     navButton.addEventListener("click", toggleNav, false);
@@ -43,10 +45,11 @@ function addSearchBar() {
 }
 
 function addFilterBar() {
-    let tagList = document.createElement("option");
-    tagList.text = "Filter By Tags";
-    filterBar = document.createElement("select");
+    filterBar = document.createElement("div");
+    filterHeader = document.createElement("div");
     filterBar.setAttribute("id", "filter-bar");
-    filterBar.appendChild(tagList);
+    filterHeader.setAttribute("id", "filter-header");
+    filterHeader.textContent = "Filter by #Tags";
+    filterBar.appendChild(filterHeader);
     menuContent.appendChild(filterBar);
 }

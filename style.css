@@ -76,6 +76,7 @@ nav {
     font-size: 1rem;
     color: var(--lite-font);
     box-shadow: -2.5px 2.5px 2px grey;
+    outline: none;
 }
 
 #search-bar:hover,
@@ -96,6 +97,7 @@ nav {
     font-size: 1rem;
     color: var(--lite-font);
     box-shadow: -2.5px 2.5px 2px grey;
+    outline: none;
 }
 
 #filter-bar:hover {
