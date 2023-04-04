@@ -34,4 +34,5 @@
 7. add dark mode / color schemes
 8. create / add menu icons (search, filter etc...)  
 9. footer  
-10. content types (code / img)  
+10. content types (code / img) 
+11. blog-dev -> blog-test -> blog-prod 
