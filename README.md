@@ -29,7 +29,7 @@
 1. redraw on orientation change / resize  
 2. put search bar in div for box-shadow / remove default stylings  
 3. stylings for tag filter as well / load tags
-4. add tag click functionality  
+4. add tag click functionality  -> https://javascript.info/bubbling-and-capturing  
 5. add search functionality   
 7. add dark mode / color schemes
 8. create / add menu icons (search, filter etc...)  

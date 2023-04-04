@@ -54,3 +54,20 @@ function buildParagraph(el) {
     elToReturn.textContent = el.content;
     return elToReturn;
 }
+
+
+/*
+EVENT BUBBLING
+
+el.onclick = function(event) {
+    setTimeout(() => {
+        if(event.target.tagName = "span"){
+            alert("tag clicked");
+            // do stuff
+        }else {
+            alert("body clicked");
+            //do stuff
+        }
+    }
+};
+*/
