@@ -77,6 +77,7 @@ nav {
     color: var(--lite-font);
     box-shadow: -2.5px 2.5px 2px grey;
     outline: none;
+    appearance: none;
 }
 
 #search-bar:hover,
