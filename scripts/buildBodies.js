@@ -1,23 +1,6 @@
-//open and close post
-export function togglePost(e) {
-    let targetIndex = e.currentTarget.postIndex;
-    let postParent = document.querySelector("#post" + targetIndex);
-    if (!e.currentTarget.opened) {
-        if (!e.currentTarget.filled) {
-            postParent.appendChild(fillPost(targetIndex, e.currentTarget.postData.postBody));
-            e.currentTarget.filled = true;
-        }
-        postParent.style.maxHeight = postParent.offsetHeight + document.querySelector("#postContentDiv" + targetIndex).offsetHeight + "px";
-        e.currentTarget.opened = true;
-    }
-    else {
-        postParent.style.maxHeight = document.querySelector("#postTitleCard" + targetIndex).offsetHeight + 20 + "px";
-        e.currentTarget.opened = false;
-    }
-}
-
 //create post body 
-function fillPost(postIndex, postBody) {
+export let buildBody = function(postIndex, postBody) {
+    let postContainer = document.querySelector("#post" + postIndex);
     let postContentDiv = document.createElement("div");
     postContentDiv.classList.add("post-content");
     postContentDiv.setAttribute("id", "postContentDiv" + postIndex);
@@ -25,7 +8,7 @@ function fillPost(postIndex, postBody) {
         let childToBe = buildElement(postBody[i]);
         postContentDiv.appendChild(childToBe);
     }
-    return postContentDiv;
+    postContainer.appendChild(postContentDiv);
 }
 
 //build elements off of post data

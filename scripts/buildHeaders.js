@@ -1,8 +1,7 @@
-import {togglePost} from "./postBody.js";
 let mainBody = document.getElementsByTagName("main")[0];
 
 //loadPostHeaders
-export function loadPostHeaders(postIndex, postData) {
+export function buildHeader(postIndex, postData) {
     addPostContainers(postIndex, postData);
     addTitle(postIndex, postData);
     addTags(postIndex, postData);
@@ -16,9 +15,9 @@ function addPostContainers(postIndex, postData) {
     let postTitleDiv = document.createElement("div");
     postDiv.classList.add("post");
     postDiv.setAttribute("id", "post" + postIndex);
-    postDiv.addEventListener("click", togglePost, "false");
     postDiv.postIndex = postIndex;
-    postDiv.postData = postData
+    postDiv.postData = postData;
+    postDiv.opened = false;
     postTitleDiv.classList.add("post-title-card");
     postTitleDiv.setAttribute("id", "postTitleCard" + postIndex);
     postDiv.appendChild(postTitleDiv);
