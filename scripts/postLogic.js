@@ -16,11 +16,11 @@ function toggle(e){
     let targetIndex = e.currentTarget.postIndex;
     let opened = e.currentTarget.opened;
     if(!opened){
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 20 + "px";
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 25 + "px";
         e.currentTarget.opened = true;
     }
     else{
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + 20 + "px";
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + 25 + "px";
         e.currentTarget.opened = false;
     }
 }
