@@ -27,12 +27,22 @@
 # TO DO
 
 - redraw on orientation change / resize  
-- put search bar in div for box-shadow / remove default stylings  
-- stylings for tag filter as well / load tags
+- load tags / show tags
 - add tag click functionality  -> https://javascript.info/bubbling-and-capturing  
 - add search functionality   
 - add dark mode / color schemes
 - create / add menu icons (search, filter etc...)  
 - footer  
 - content types (code / img) 
-- blog-dev -> blog-test -> blog-prod 
+- blog-dev -> blog-test -> blog-prod  
+- fragContainer / fragHeader / fragContent / fragId
+- index.js simplification / decoupling  
+  - loadPostData()    
+  - empowerNav()  
+    - menu button  
+    - search bar
+    - filter bar  
+    - theme button  
+  - empowerPosts()  
+    - fragContainer.addEventHandler(getTarget...)
+    - get target will either operate tag filter or open post  
