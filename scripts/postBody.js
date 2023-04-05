@@ -2,7 +2,6 @@
 export function togglePost(e) {
     let targetIndex = e.currentTarget.postIndex;
     let postParent = document.querySelector("#post" + targetIndex);
-    let activeButton = document.querySelector("#postButton" + targetIndex);
     if (!e.currentTarget.opened) {
         if (!e.currentTarget.filled) {
             postParent.appendChild(fillPost(targetIndex, e.currentTarget.postData.postBody));
