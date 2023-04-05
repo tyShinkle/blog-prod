@@ -37,7 +37,7 @@
 - blog-dev -> blog-test -> blog-prod  
 - fragContainer / fragHeader / fragContent / fragId
 - index.js simplification / decoupling  
-  - loadPostData()    
+  - buildPosts()    
   - empowerNav()  
     - menu button  
     - search bar
