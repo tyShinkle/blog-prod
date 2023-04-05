@@ -160,6 +160,7 @@ nav {
 
 .post-content {
     padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .post-content > * {
