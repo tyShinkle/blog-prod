@@ -3,6 +3,6 @@
     <!--glass-->
     <circle cx="64" cy="36" r="25" stroke-width="15px" stroke="black" fill="#eee" />
     <!--handle-->
-    <line x1="10" y1="90" x2="40" y2="60" stroke-width="15px" stroke-linecap="round stroke=black" />
+    <line x1="10" y1="90" x2="40" y2="60" stroke-width="15px" stroke-linecap="round" stroke="black" />
 </svg>
 <!--test bottom-->
