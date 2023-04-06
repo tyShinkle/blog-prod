@@ -85,6 +85,10 @@ nav {
     box-shadow: -5px 5px 5px grey;
 }
 
+#search-icon {
+    width: 1.5em;
+}
+
 #filter-bar {
     appearance: none;
     display: block;
