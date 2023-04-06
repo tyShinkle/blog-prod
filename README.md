@@ -25,8 +25,8 @@
 # Content Management
 
 # TO DO
-
-- redraw on orientation change / resize  
+- change search bar to div with icon and input 
+    - add event to input for toggling shadow
 - load tags / show tags
 - add tag click functionality  -> https://javascript.info/bubbling-and-capturing  
 - add search functionality   
