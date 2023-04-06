@@ -38,7 +38,7 @@ function addTags(postIndex, postData) {
     let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
     let postTags = document.createElement("div");
     postTags.classList.add("post-tags");
-    for (let i = 0; i < postData.postTags.length; i++) {
+    for (let i = 0; i < postData.postTags.length; i++){
         let s = document.createElement("span");
         s.classList.add("post-tag");
         s.textContent = postData.postTags[i];

@@ -14,7 +14,7 @@ function toggleNav() {
         menuContainer.opened = true;
         navButton.textContent = "-"
     }
-    else {
+    else{
         menuContainer.style.maxHeight = "0px";
         menuContainer.opened = false;
         navButton.textContent = "+"

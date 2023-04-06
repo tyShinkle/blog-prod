@@ -13,7 +13,7 @@ export let buildBody = function(postIndex, postBody) {
 
 //build elements off of post data
 function buildElement(el) {
-    switch (el.elementType) {
+    switch (el.elementType){
         case "heading":
             return buildHeading(el);
         case "paragraph":
