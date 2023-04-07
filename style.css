@@ -6,7 +6,7 @@
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
     --font: #121212;
-    --background:#e3e3e3;
+    --background:#e2e2e2;
     --shadow: rgb(175, 175, 175);
 }
 
@@ -176,7 +176,11 @@ nav {
     border-radius: 10px;
     border: none;
     box-shadow: 2px 2px 0px var(--shadow),
-                -2px -2px 0px white;
+                2px 2px 1px var(--shadow),
+                2px 2px 2px var(--shadow),
+                2px 2px 0px white,
+                2px 2px 4px white,
+                inset 2px 2px 0px white;
 }
 
 .shadows:focus {
