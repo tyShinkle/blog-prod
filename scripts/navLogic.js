@@ -1,4 +1,5 @@
 let navButton = document.querySelector("#nav-button");
+let navSymbol = document.querySelector("#nav-button-symbol");
 let menuContainer = document.querySelector("#menu");
 let menuContent = document.querySelector("#menu-content");
 let filterBar = document.querySelector("#filter-bar");
@@ -16,13 +17,13 @@ function toggleNav() {
         menuContainer.style.maxHeight = menuContent.offsetHeight + 20 + "px";
         menuContainer.opened = true;
         navButton.classList.add("shadows-clicked");
-        navButton.textContent = "-"
+        navSymbol.textContent = "-"
     }
     else{
         menuContainer.style.maxHeight = "0px";
         menuContainer.opened = false;
         navButton.classList.remove("shadows-clicked");
-        navButton.textContent = "+"
+        navSymbol.textContent = "+"
     }
 }
 
