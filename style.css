@@ -6,9 +6,8 @@
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
     --font: #121212;
-    --background:#e0e0e0;
+    --background:#e3e3e3;
     --shadow: rgb(175, 175, 175);
-    --light-shadow: rgb(200, 200, 200);
 }
 
 *, 
@@ -177,21 +176,15 @@ nav {
     border-radius: 10px;
     border: none;
     box-shadow: 2px 2px 0px var(--shadow),
-                2px 2px 2px var(--shadow),
-                -2px -2px 0px white,
-                -2px -2px 2px white;
+                -2px -2px 0px white;
 }
 
 .shadows:focus {
     box-shadow: inset 2px 2px 0px var(--shadow),
-                inset 2px 2px 4px var(--shadow),
-                inset -2px -2px 0px white,
-                inset -2px -2px 4px white;
+                inset -2px -2px 0px white;
 }
 
 .shadows-clicked { 
-    box-shadow: inset 2px 2px 0px var(--shadow),
-                inset 2px 2px 4px var(--shadow),
-                inset -2px -2px 0px white,
-                inset -2px -2px 4px white;
+    box-shadow: inset 2px 2px 2px var(--shadow),
+                inset -2px -2px 0px white;
 }
