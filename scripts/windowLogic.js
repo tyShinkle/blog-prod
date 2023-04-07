@@ -9,10 +9,10 @@ export let empowerWindow = function(){
 let resetSizes = function() {
     for(let i = 0; i < posts.length; i++){
         if(posts[i].opened){
-            posts[i].style.maxHeight = postHeaders[i].offsetHeight + postBodies[i].offsetHeight + 25 + "px";
+            posts[i].style.maxHeight = postHeaders[i].offsetHeight + postBodies[i].offsetHeight + "px";
         }
         else{
-            posts[i].style.maxHeight = postHeaders[i].offsetHeight + 25 + "px";
+            posts[i].style.maxHeight = postHeaders[i].offsetHeight + "px";
         }
     }
 } 

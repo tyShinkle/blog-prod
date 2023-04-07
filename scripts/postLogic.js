@@ -16,13 +16,11 @@ function toggle(e){
     let targetIndex = e.currentTarget.postIndex;
     let opened = e.currentTarget.opened;
     if(!opened){
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 25 + "px";
-        postContainers[targetIndex].classList.add("shadows-clicked");
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + "px";
         e.currentTarget.opened = true;
     }
     else{
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + 25 + "px";
-        postContainers[targetIndex].classList.remove("shadows-clicked");
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + "px";
         e.currentTarget.opened = false;
     }
 }

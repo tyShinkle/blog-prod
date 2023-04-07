@@ -1,7 +1,7 @@
 <!--test top-->
 <svg version = "1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search-icon">
     <!--glass-->
-    <circle cx="64" cy="36" r="25" stroke-width="15px" stroke="black" fill="#e1e1e1" />
+    <circle cx="64" cy="36" r="25" stroke-width="15px" stroke="black" fill="white" />
     <!--handle-->
     <line x1="10" y1="90" x2="40" y2="60" stroke-width="15px" stroke-linecap="round" stroke="black" />
 </svg>
