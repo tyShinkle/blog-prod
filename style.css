@@ -63,7 +63,7 @@ nav {
 
 #menu-content > * {
     min-width: 100%;
-    padding: 0px 15px 25px 15px;
+    padding: 25px 15px 25px 15px;
     font-size: 1rem;
     font-family: monospace;
 }
