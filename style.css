@@ -7,8 +7,11 @@
     --safe-left: env(safe-area-inset-left);
     --lite-font: #121212;
     --dark-font: #eee;
-    --lite-background: #E4EBF5;
+    --lite-background: #e0e0e0;
+    --soft-white: #d9d9d9;
     --dark-background: #121212;
+    --shadow-grey: rgb(168, 168, 168);
+    --light-shadow-grey: rgb(214, 214, 214);
 }
 
 *, 
@@ -176,18 +179,19 @@ nav {
 .shadows {
     border-radius: 5px;
     border: none;
-    box-shadow: 2px 2px 2px grey,
-                3px 3px 6px grey,
+    box-shadow: 2px 2px 4px var(--shadow-grey),
+                4px 4px 8px var(--light-shadow-grey),
                 -2px -2px 2px white,
-                -3px -3px 6px white;
+                -3px -3px 12px var(--soft-white),
+                inset 2px 2px 10px var(--light-shadow-grey);
 }
 
 .shadows:focus {
-    box-shadow: inset 2px 2px 2px grey,
+    box-shadow: inset 2px 2px 2px var(--shadow-grey),
                 inset -2px -2px 2px white;
 }
 
 .shadows-clicked {
-        box-shadow: inset 2px 2px 2px grey,
+        box-shadow: inset 2px 2px 2px var(--shadow-grey),
                     inset -2px -2px 2px white;
 }
