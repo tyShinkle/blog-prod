@@ -36,10 +36,9 @@ body::-webkit-scrollbar {
 
 nav {
     position: relative;
-    padding: 30px 15px;
+    padding: 25px 15px;
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
 #nav-bar {
@@ -62,7 +61,7 @@ nav {
 }
 
 #menu-content > * {
-    padding: 15px;
+    padding: 0px 15px 25px 15px;
     font-size: 1rem;
     font-family: monospace;
 }
