@@ -14,6 +14,7 @@ function addPostContainers(postIndex, postData) {
     let postDiv = document.createElement("div");
     let postTitleDiv = document.createElement("div");
     postDiv.classList.add("post");
+    postDiv.classList.add("shadows");
     postDiv.setAttribute("id", "post" + postIndex);
     postDiv.postIndex = postIndex;
     postDiv.postData = postData;
