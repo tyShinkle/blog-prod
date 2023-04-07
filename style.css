@@ -47,14 +47,18 @@ nav {
     right: 0px;
     transform: translate3d(0, -50%, 0);
     cursor: pointer;
+    /*
     border: 2px solid var(--lite-font);
     border-radius: 5px;
     box-shadow: -2.5px 2.5px 2px grey;
+    */
 }
 
+/*
 #nav-button:hover {
     box-shadow: -5px 5px 5px grey;
 }
+*/
 
 #menu {
     max-height: 0px;
@@ -75,17 +79,22 @@ nav {
     color: var(--lite-font);
     background: url(./icon/search.svg) no-repeat scroll 10px 10px;
     background-size: 1.25em;
+    outline: none;
+    appearance: none;
+    border: none;
+    /*
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: -2.5px 2.5px 2px grey;
-    outline: none;
-    appearance: none;
+    */
 }
 
+/*
 #search-bar:hover,
 #search-bar:focus {
     box-shadow: -5px 5px 5px grey;
 }
+*/
 
 #filter-bar {
     position: relative;
@@ -96,18 +105,23 @@ nav {
     max-width: 25em;
     font-family: monospace;
     font-size: 1rem;
-    border: 2px solid black;
-    border-radius: 5px;
     color: var(--lite-font);
-    box-shadow: -2.5px 2.5px 2px grey;
+    cursor: pointer;
     appearance: none;
     outline: none;
+    /*
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -2.5px 2.5px 2px grey;
+    */
 }
 
+/*
 #filter-bar:hover {
     cursor: pointer;
     box-shadow: -5px 5px 5px grey;
 }
+*/
 
 #filter-icon {
     position: relative;
@@ -124,6 +138,7 @@ nav {
     font-weight: bold;
     font-size: 1.25em;
     right: 10px;
+    bottom: -7px;
     top: 50%;
     transform: translate3d(0, -50%, 0);
 }
@@ -140,16 +155,21 @@ nav {
     padding: 10px;
     margin: 0px 10px 10px 10px;
     overflow:hidden;
+    transition: max-height 0.5s;
+    cursor: pointer;
+    /*
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: -2.5px 2.5px 2px grey;
-    transition: max-height 0.5s;
+    */
 }
 
+/*
 .post:hover {
     cursor:pointer;
     box-shadow: -5px 5px 5px grey;
 }
+*/
 
 .post-title {
     font-size: 1.25rem;
@@ -192,4 +212,21 @@ nav {
 .post-content > p {
     font-size: 1rem;
     line-height: 1.5em;
+}
+
+.shadows {
+    border-radius: 10px;
+    border: none;
+    box-shadow: -2px 2px 2px grey,
+                2px -2px 2px white;
+}
+
+.shadows:focus {
+    box-shadow: inset -2px 2px 2px grey,
+                inset 2px -2px 2px white;
+}
+
+.shadows-clicked {
+        box-shadow: inset -2px 2px 2px grey,
+                    inset 2px -2px 2px white;
 }

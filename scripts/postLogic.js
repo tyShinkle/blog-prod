@@ -17,10 +17,12 @@ function toggle(e){
     let opened = e.currentTarget.opened;
     if(!opened){
         postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 25 + "px";
+        postContainers[targetIndex].classList.add("shadows-clicked");
         e.currentTarget.opened = true;
     }
     else{
         postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + 25 + "px";
+        postContainers[targetIndex].classList.remove("shadows-clicked");
         e.currentTarget.opened = false;
     }
 }
