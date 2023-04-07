@@ -5,13 +5,10 @@
     --safe-right: env(safe-area-inset-right);
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
-    --lite-font: #121212;
-    --dark-font: #eee;
-    --lite-background: #e1e1e1;
-    --soft-white: #d9d9d9;
-    --dark-background: #121212;
-    --shadow-grey: rgb(168, 168, 168);
-    --light-shadow-grey: rgb(214, 214, 214);
+    --font: #121212;
+    --background:#e0e0e0;
+    --shadow: rgb(175, 175, 175);
+    --light-shadow: rgb(200, 200, 200);
 }
 
 *, 
@@ -21,8 +18,8 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    color: var(--lite-font);
-    background-color: var(--lite-background);
+    color: var(--font);
+    background-color: var(--background);
 }
 
 body {
@@ -90,7 +87,7 @@ nav {
     max-width: 25em;
     font-family: monospace;
     font-size: 1rem;
-    color: var(--lite-font);
+    color: var(--font);
     cursor: pointer;
     appearance: none;
     outline: none;
@@ -151,7 +148,7 @@ nav {
 
 .post-tag:hover {
     cursor: pointer;
-    border-bottom: 1px solid var(--lite-font);
+    border-bottom: 1px solid var(--font);
 }
 
 .post-date {
@@ -179,21 +176,22 @@ nav {
 .shadows {
     border-radius: 5px;
     border: none;
-    box-shadow: 2px 2px 4px var(--shadow-grey),
-                4px 4px 8px var(--light-shadow-grey),
-                -2px -2px 2px white,
-                -3px -3px 12px var(--soft-white),
-                inset 2px 2px 10px var(--light-shadow-grey);
+    box-shadow: 2px 2px 0px var(--shadow),
+                2px 2px 2px var(--shadow),
+                -2px -2px 0px white,
+                -2px -2px 2px white;
 }
 
 .shadows:focus {
-    box-shadow: inset 2px 2px 2px var(--shadow-grey),
-                inset -2px -2px 2px white;
+    box-shadow: inset 2px 2px 0px var(--shadow),
+                inset 2px 2px 4px var(--shadow),
+                inset -2px -2px 0px white,
+                inset -2px -2px 4px white;
 }
 
-.shadows-clicked {
-        box-shadow: inset 2px 2px 2px var(--shadow-grey),
-                    inset 2px 2px 4px var(--light-shadow-grey),
-                    inset -2px -2px 2px white,
-                    inset -2px -2px 8px var(--soft-white);
+.shadows-clicked { 
+    box-shadow: inset 2px 2px 0px var(--shadow),
+                inset 2px 2px 4px var(--shadow),
+                inset -2px -2px 0px white,
+                inset -2px -2px 4px white;
 }
