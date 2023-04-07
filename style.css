@@ -36,32 +36,29 @@ body::-webkit-scrollbar {
 
 nav {
     position: relative;
-    padding: 25px 15px;
+    padding: 50px 15px 25px 15px;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: black;
 }
 
 #nav-bar {
     position: relative;
-    background-color: black;
 }
 
 #nav-button {
     position: absolute;
     top: 50%;
     right: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
     transform: translate3d(0, -50%, 0);
-    line-height:0;
     cursor: pointer;
-    color: white;
 }
 
 #menu {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
-    background-color: black;
 }
 
 #menu-content > * {
@@ -69,7 +66,6 @@ nav {
     padding: 0px 15px 25px 15px;
     font-size: 1rem;
     font-family: monospace;
-    background-color: black;
 }
 
 #search-bar {
@@ -84,20 +80,12 @@ nav {
     cursor: pointer;
     appearance: none;
     outline: none;
-    background-color: black;
-}
-
-#filter-header {
-    background-color: black;
-    color: white;
 }
 
 #site-title {
     position: relative;
     width: fit-content;
     cursor: pointer;
-    background-color: black;
-    color: white;
 }
 
 main {
@@ -151,4 +139,14 @@ main {
 .post-content > p {
     font-size: 1rem;
     line-height: 1.5em;
+}
+
+.button {
+    box-shadow: 2px 2px 2px black,
+                0px 0px 2px black;
+}
+
+.button-clicked {
+    box-shadow: inset 2px 2px 2px black,
+                0px 0px 2px black;
 }
