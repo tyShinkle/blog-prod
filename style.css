@@ -215,18 +215,20 @@ nav {
 }
 
 .shadows {
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    box-shadow: -2px 2px 2px grey,
-                2px -2px 2px white;
+    box-shadow: 2px 2px 2px grey,
+                3px 3px 6px grey,
+                -2px -2px 2px white,
+                -3px -3px 6px white;
 }
 
 .shadows:focus {
-    box-shadow: inset -2px 2px 2px grey,
-                inset 2px -2px 2px white;
+    box-shadow: inset 2px 2px 2px grey,
+                inset -2px -2px 2px white;
 }
 
 .shadows-clicked {
-        box-shadow: inset -2px 2px 2px grey,
-                    inset 2px -2px 2px white;
+        box-shadow: inset 2px 2px 2px grey,
+                    inset -2px -2px 2px white;
 }
