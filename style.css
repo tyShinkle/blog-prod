@@ -36,9 +36,10 @@ body::-webkit-scrollbar {
 
 nav {
     position: relative;
-    padding: 20px 15px;
+    padding: 30px 15px;
     font-size: 1.25rem;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 #nav-bar {
@@ -87,7 +88,7 @@ nav {
 }
 
 .post { 
-    margin: 0px 15px;
+    margin: 0px 15px 45px 15px;
     position: relative;
     overflow:hidden;
     transition: max-height 0.5s;
@@ -95,7 +96,7 @@ nav {
 }
 
 .post-title {
-    padding-top: 15px;
+    padding-top: 0px;
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -118,7 +119,7 @@ nav {
 
 .post-date {
     font-size: 1rem;
-    padding-bottom:15px;
+    padding-bottom:30px;
 }
 
 .post-content {
