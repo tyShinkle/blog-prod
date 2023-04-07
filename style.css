@@ -95,11 +95,8 @@ nav {
     border-bottom: 2px solid black;
 }
 
-.post > * {
-    padding: 15px 0px;
-}
-
 .post-title {
+    padding-top: 15px;
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -122,13 +119,15 @@ nav {
 
 .post-date {
     font-size: 1rem;
+    padding-bottom:15px;
 }
 
-.post-content > * {
-    padding-bottom: 20px;
+.post-content {
+    padding: 15px 0px;
 }
 
 .post-content > h3 {
+    padding-bottom: 15px;
     font-size: 1.025rem;
 }
 
