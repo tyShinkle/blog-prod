@@ -39,10 +39,12 @@ nav {
     padding: 25px 15px;
     font-size: 1.25rem;
     font-weight: bold;
+    background-color: black;
 }
 
 #nav-bar {
     position: relative;
+    background-color: black;
 }
 
 #nav-button {
@@ -52,18 +54,22 @@ nav {
     transform: translate3d(0, -50%, 0);
     line-height:0;
     cursor: pointer;
+    color: white;
 }
 
 #menu {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
+    background-color: black;
 }
 
 #menu-content > * {
+    min-width: 100%;
     padding: 0px 15px 25px 15px;
     font-size: 1rem;
     font-family: monospace;
+    background-color: black;
 }
 
 #search-bar {
@@ -78,12 +84,24 @@ nav {
     cursor: pointer;
     appearance: none;
     outline: none;
+    background-color: black;
+}
+
+#filter-header {
+    background-color: black;
+    color: white;
 }
 
 #site-title {
     position: relative;
     width: fit-content;
     cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+main {
+    padding: 25px 0px;
 }
 
 .post { 
