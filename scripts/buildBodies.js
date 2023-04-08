@@ -18,6 +18,8 @@ function buildElement(el) {
             return buildHeading(el);
         case "paragraph":
             return buildParagraph(el);
+        case "code":
+            return buildCode(el);
         default:
             console.log("something went wrong!");
     }
@@ -35,6 +37,19 @@ function buildParagraph(el) {
     let elToReturn = document.createElement("p");
     elToReturn.textContent = el.content;
     return elToReturn;
+}
+
+//build code
+function buildCode(el) {
+    let codeContainer = document.createElement("div");
+    codeContainer.classList.add("code-container");
+    for(let i = 0; i < el.content.length; i++){
+        let s = document.createElement("span");
+        s.textContent = el.content[i].content+" ";
+        s.classList.add(el.content[i].type);
+        codeContainer.appendChild(s);
+    }
+    return codeContainer;
 }
 
 

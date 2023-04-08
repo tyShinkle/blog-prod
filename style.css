@@ -59,11 +59,25 @@ main {
 }
 
 .post-content {
-    padding-top: 15px;
     line-height: 1.4em;
+    padding-bottom: 15px;
 }
 
-.post-content > h3 {
-    line-height:1.4em;
-    padding-bottom: 15px;
+.post-content > * {
+    margin-top: 15px;
+}
+
+/*code builder*/
+
+.code-container {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #101010;
+}
+.keyword {
+    color: rgb(114, 194, 240);
+}
+
+.variable {
+    color: rgb(123, 236, 124);
 }
