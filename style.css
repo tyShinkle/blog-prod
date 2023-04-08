@@ -38,7 +38,7 @@ main {
     margin: 0px 15px 45px 15px;
     position: relative;
     font-size: 1rem;
-    line-height: 1.6em;
+    line-height: 2em;
     overflow:hidden;
     transition: max-height 0.5s;
     cursor: pointer;
