@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 
 nav {
     position: relative;
-    padding: 40px 15px 25px 15px;
+    padding: 45px 15px 30px 15px;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -41,7 +41,7 @@ main {
 }
 
 .post { 
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 45px 15px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
@@ -59,11 +59,13 @@ main {
 }
 
 .post-content {
-    padding-top: 30px;
+    padding-top: 15px;
+    line-height: 1.4em;
 }
 
-.post-content > * {
+.post-content > h3 {
     line-height:1.4em;
     padding-bottom: 15px;
 }
+
 
