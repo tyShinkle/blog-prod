@@ -42,12 +42,18 @@ function buildParagraph(el) {
 //build code
 function buildCode(el) {
     let codeContainer = document.createElement("div");
+    let newLine = document.createElement("br");
     codeContainer.classList.add("code-container");
     for(let i = 0; i < el.content.length; i++){
-        let s = document.createElement("span");
-        s.textContent = el.content[i].content+" ";
-        s.classList.add(el.content[i].type);
-        codeContainer.appendChild(s);
+        if(el.content[i].type == "newLine"){
+            codeContainer.appendChild(newLine);
+        } 
+        else{
+            let s = document.createElement("span");
+            s.textContent = el.content[i].content;
+            s.classList.add(el.content[i].type);
+            codeContainer.appendChild(s);
+        }
     }
     return codeContainer;
 }

@@ -15,8 +15,12 @@ export const postData = `[
             {
                 "elementType":"code",
                 "content":[
-                            {"type":"keyword", "content":"function"},
-                            {"type":"variable", "content":"test"}
+                            {"type":"keyword", "content":"function "},
+                            {"type":"variable", "content":"test"},
+                            {"type":"bracket", "content":"() "},
+                            {"type":"bracket", "content":"{"},
+                            {"type":"newLine", "content":""},
+                            {"type":"bracket", "content":"}"}
                         ]
             }
         ]

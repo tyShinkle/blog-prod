@@ -69,15 +69,16 @@ main {
 
 /*code builder*/
 
-.code-container {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #101010;
-}
+/*.code-container*/
+
 .keyword {
-    color: rgb(114, 194, 240);
+    color: magenta;
 }
 
 .variable {
-    color: rgb(123, 236, 124);
+    color: royalblue;
+}
+
+.bracket {
+    color: black;
 }
