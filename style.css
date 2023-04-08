@@ -18,16 +18,22 @@ html {
 
 body {
     padding: --safe-top --safe-right --safe-bottom --safe-left;
-    max-width: 60em;
+    max-width: 50em;
     margin: auto;
-    font-family: monospace;
+    font-family: 'Roboto';
+    background-color: #131313;
 }
 
 nav {
     position: relative;
-    padding: 45px 15px 30px 15px;
+    margin: 15px 5px 0 5px;
+    padding: 15px;
     font-size: 1rem;
     font-weight: bold;
+    border-radius: 5px;
+    background-color: #313131;
+    color: #c2c2c2;
+    letter-spacing: 1px;
 }
 
 main {
@@ -35,20 +41,27 @@ main {
 }
 
 .post { 
-    margin: 0px 15px 45px 15px;
+    margin-bottom: 15px;
+    padding: 15px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
     overflow:hidden;
     transition: max-height 0.5s;
     cursor: pointer;
+    border-radius: 5px;
+    background-color:#313131;
+    color: #c2c2c2;
+    letter-spacing: 1px;
 }
 
 .post-title {
     font-weight: bold;
+    margin-bottom:5px;
 }
 
 .post-tags{
+    margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -58,9 +71,13 @@ main {
     margin-right: 20px;
 }
 
+.post-date::before {
+    content: "\1F4C5  ";
+}
+
 .post-content {
     line-height: 1.4em;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 .post-content > * {
@@ -72,13 +89,13 @@ main {
 /*.code-container*/
 
 .keyword {
-    color: magenta;
+    color: rgb(248, 63, 248);
 }
 
 .variable {
-    color: royalblue;
+    color: rgb(108, 142, 243);
 }
 
 .bracket {
-    color: black;
+    color: white;
 }

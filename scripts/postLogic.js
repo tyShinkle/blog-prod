@@ -14,12 +14,10 @@ function toggle(e){
     let postIndicator = document.getElementById("post-indicator"+targetIndex);
     if(!opened){
         postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + "px";
-        postIndicator.textContent = "-";
         e.currentTarget.opened = true;
     }
     else{
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + "px";
-        postIndicator.textContent = "+";
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + 30 + "px";
         e.currentTarget.opened = false;
     }
 }

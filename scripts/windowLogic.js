@@ -12,7 +12,7 @@ let resetSizes = function() {
             posts[i].style.maxHeight = postHeaders[i].offsetHeight + postBodies[i].offsetHeight + "px";
         }
         else{
-            posts[i].style.maxHeight = postHeaders[i].offsetHeight + "px";
+            posts[i].style.maxHeight = postHeaders[i].offsetHeight + 30 + "px";
         }
     }
 } 
