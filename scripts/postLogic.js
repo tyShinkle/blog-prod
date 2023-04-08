@@ -11,12 +11,15 @@ export let empowerPosts = function() {
 function toggle(e){
     let targetIndex = e.currentTarget.postIndex;
     let opened = e.currentTarget.opened;
+    let postIndicator = document.getElementById("post-indicator"+targetIndex);
     if(!opened){
         postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + "px";
+        postIndicator.textContent = "-";
         e.currentTarget.opened = true;
     }
     else{
         postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + "px";
+        postIndicator.textContent = "+";
         e.currentTarget.opened = false;
     }
 }

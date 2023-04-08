@@ -6,6 +6,7 @@ export function buildHeader(postIndex, postData) {
     addTitle(postIndex, postData);
     addTags(postIndex, postData);
     addDate(postIndex, postData);
+    addOpenIndicator(postIndex);
     setMaxHeight(postIndex);
 }
 
@@ -54,6 +55,16 @@ function addDate(postIndex, postData) {
     postDate.classList.add("post-date");
     postDate.textContent = postData.postDate;
     targetPostTitleCard.appendChild(postDate);
+}
+
+//add +/-
+function addOpenIndicator(postIndex) {
+    let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
+    let indicator = document.createElement("div");
+    indicator.classList.add("post-indicator");
+    indicator.setAttribute("id", "post-indicator" + postIndex);
+    indicator.textContent = "+";
+    targetPostTitleCard.appendChild(indicator);
 }
 
 //set max height for open / close
