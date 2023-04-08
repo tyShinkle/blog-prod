@@ -31,13 +31,13 @@ nav {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #313131;
-    color: #c2c2c2;
+    background-color: #202020;
+    color: #cfcfcf;
     letter-spacing: 1px;
 }
 
 main {
-    padding: 15px 0px;
+    padding: 15px 5px;
 }
 
 .post { 
@@ -50,8 +50,8 @@ main {
     transition: max-height 0.5s;
     cursor: pointer;
     border-radius: 5px;
-    background-color:#313131;
-    color: #c2c2c2;
+    background-color:#202020;
+    color: #cfcfcf;
     letter-spacing: 1px;
 }
 
