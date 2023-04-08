@@ -21,7 +21,7 @@ body {
     max-width: 50em;
     margin: auto;
     font-family: 'Roboto';
-    background-color: #101010;
+    background-color: #0e0e0e;
 }
 
 nav {
@@ -34,6 +34,7 @@ nav {
     background-color: #202020;
     color: #cfcfcf;
     letter-spacing: 1px;
+    width: fit-content;
 }
 
 main {
@@ -42,7 +43,6 @@ main {
 
 .post { 
     margin-bottom: 10px;
-    padding: 10px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
@@ -50,9 +50,15 @@ main {
     transition: max-height 0.5s;
     cursor: pointer;
     border-radius: 5px;
-    background-color:#202020;
     color: #cfcfcf;
     letter-spacing: 1px;
+}
+
+.post-title-card {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #202020;
+    width: fit-content;
 }
 
 .post-title {
@@ -79,6 +85,7 @@ main {
 
 .post-content {
     line-height: 1.4em;
+    padding: 10px;
 }
 
 .post-content > * {
@@ -92,7 +99,8 @@ main {
 .code-container {
     padding: 10px;
     border-radius: 5px;
-    background-color: #101010;
+    background-color: black;
+    width: fit-content;
 }
 
 .keyword {

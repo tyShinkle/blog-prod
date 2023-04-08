@@ -16,7 +16,7 @@ function toggle(e){
         e.currentTarget.opened = true;
     }
     else{
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + 20 + "px";
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + "px";
         e.currentTarget.opened = false;
     }
 }
