@@ -85,11 +85,10 @@ main {
 
 .post-content {
     line-height: 1.4em;
-    padding: 10px;
 }
 
 .post-content > * {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /*code builder*/
