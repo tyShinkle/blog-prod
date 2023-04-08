@@ -21,7 +21,7 @@ body {
     max-width: 50em;
     margin: auto;
     font-family: 'Roboto';
-    background-color: #0e0e0e;
+    background-color: #202020;
 }
 
 nav {
@@ -31,7 +31,7 @@ nav {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #202020;
+    background-color: #0e0e0e;
     color: #cfcfcf;
     letter-spacing: 1px;
     width: fit-content;
@@ -57,7 +57,7 @@ main {
 .post-title-card {
     padding: 10px;
     border-radius: 5px;
-    background-color: #202020;
+    background-color: #0e0e0e;
     width: fit-content;
 }
 
