@@ -14,7 +14,6 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow: -moz-scrollbars-none;
 }
 
 body {
@@ -22,8 +21,6 @@ body {
     max-width: 60em;
     margin: auto;
     font-family: monospace;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
