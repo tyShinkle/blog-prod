@@ -2,10 +2,6 @@ let postContainers = document.getElementsByClassName("post");
 let postHeaders = document.getElementsByClassName("post-title-card");
 let postContent = document.getElementsByClassName("post-content");
 
-/*
-* should add different event which distinguishes between
-* a tag click or a body click.
-*/
 export let empowerPosts = function() {
     for(let i = 0; i < postContainers.length; i++){
         postContainers[i].addEventListener("click", toggle, false);

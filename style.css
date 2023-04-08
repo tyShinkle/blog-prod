@@ -5,8 +5,6 @@
     --safe-right: env(safe-area-inset-right);
     --safe-bottom: env(safe-area-inset-bottom);
     --safe-left: env(safe-area-inset-left);
-    --font: black;
-    --background:white;
 }
 
 *, 
@@ -16,8 +14,6 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    color: var(--font);
-    background-color: var(--background);
 }
 
 body {
@@ -40,60 +36,12 @@ nav {
     font-weight: bold;
 }
 
-#nav-bar {
-    position: relative;
-}
-
-#nav-button {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transform: translate3d(0, -50%, 0);
-    cursor: pointer;
-}
-
-#menu {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s;
-}
-
-#menu-content{
-    padding: 15px;
-    font-size: 1rem;
-    font-family: monospace;
-}
-
-#search-bar {
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 25em;
-    font-family: monospace;
-    outline: none;
-    appearance: none;
-    border: none;
-}
-
-#filter-bar {
-    cursor: pointer;
-    appearance: none;
-    outline: none;
-}
-
-#site-title {
-    position: relative;
-    width: fit-content;
-    cursor: pointer;
-}
-
 main {
     padding: 15px 0px;
 }
 
 .post { 
-    margin: 0px 15px 45px 15px;
+    margin: 0px 15px 40px 15px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
