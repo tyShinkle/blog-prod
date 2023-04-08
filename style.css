@@ -21,7 +21,7 @@ body {
     max-width: 50em;
     margin: auto;
     font-family: 'Roboto';
-    background-color: #131313;
+    background-color: #101010;
 }
 
 nav {
@@ -71,9 +71,11 @@ main {
     margin-right: 20px;
 }
 
+/*
 .post-date::before {
     content: "\1F4C5  ";
 }
+*/
 
 .post-content {
     line-height: 1.4em;
@@ -90,7 +92,7 @@ main {
 .code-container {
     padding: 10px;
     border-radius: 5px;
-    background-color: #131313;
+    background-color: #101010;
 }
 
 .keyword {
