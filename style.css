@@ -21,7 +21,7 @@ body {
     max-width: 50em;
     margin: auto;
     font-family: 'Roboto';
-    background-color: #202020;
+    background-color:#ddd;
 }
 
 nav {
@@ -32,7 +32,7 @@ nav {
     font-weight: bold;
     border-radius: 5px;
     background-color: #0e0e0e;
-    color: #cfcfcf;
+    color: #ddd;
     letter-spacing: 1px;
     width: fit-content;
 }
@@ -50,7 +50,7 @@ main {
     transition: max-height 0.5s;
     cursor: pointer;
     border-radius: 5px;
-    color: #cfcfcf;
+    color: #0e0e0e;
     letter-spacing: 1px;
 }
 
@@ -58,6 +58,7 @@ main {
     padding: 10px;
     border-radius: 5px;
     background-color: #0e0e0e;
+    color: #ddd;
     width: fit-content;
 }
 
@@ -86,6 +87,10 @@ main {
 .post-content {
     line-height: 1.4em;
     padding: 10px;
+    background-color: #aaaaaa;
+    color: #0e0e0e;
+    border-radius: 5px;
+    margin: 10px 0;
 }
 
 .post-content > * {
@@ -99,18 +104,18 @@ main {
 .code-container {
     padding: 10px;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(202, 202, 202);
     width: fit-content;
 }
 
 .keyword {
-    color: rgb(248, 63, 248);
+    color:magenta;
 }
 
 .variable {
-    color: rgb(108, 142, 243);
+    color: royalblue;
 }
 
 .bracket {
-    color: white;
+    color: black;
 }
