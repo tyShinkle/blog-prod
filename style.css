@@ -26,8 +26,8 @@ body {
 
 nav {
     position: relative;
-    margin: 15px 5px 0 5px;
-    padding: 15px;
+    margin: 10px 5px 0 5px;
+    padding: 10px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
@@ -37,12 +37,12 @@ nav {
 }
 
 main {
-    padding: 15px 5px;
+    padding: 10px 5px;
 }
 
 .post { 
-    margin-bottom: 15px;
-    padding: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
@@ -77,16 +77,21 @@ main {
 
 .post-content {
     line-height: 1.4em;
-    padding-bottom: 45px;
 }
 
 .post-content > * {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /*code builder*/
 
 /*.code-container*/
+
+.code-container {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #131313;
+}
 
 .keyword {
     color: rgb(248, 63, 248);
