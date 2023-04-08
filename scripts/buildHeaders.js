@@ -40,7 +40,7 @@ function addTags(postIndex, postData) {
     let postTags = document.createElement("div");
     postTags.classList.add("post-tags");
     for (let i = 0; i < postData.postTags.length; i++){
-        let s = document.createElement("span");
+        let s = document.createElement("div");
         s.classList.add("post-tag");
         s.textContent = postData.postTags[i];
         postTags.appendChild(s);

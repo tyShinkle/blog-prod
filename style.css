@@ -48,7 +48,13 @@ main {
     font-weight: bold;
 }
 
+.post-tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .post-tag {
+    display: inline;
     margin-right: 20px;
 }
 
