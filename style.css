@@ -26,23 +26,20 @@ body {
 
 nav {
     position: relative;
-    margin: 10px 5px 0 5px;
+    margin: 20px 15px;
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #0e0e0e;
-    color: #ddd;
+    color: #000;
     letter-spacing: 1px;
     width: fit-content;
-}
-
-main {
-    padding: 10px 5px;
+    box-shadow: 2px 2px 2px black,
+                0px 0px 2px black;
 }
 
 .post { 
-    margin-bottom: 10px;
+    margin: 20px 10px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
@@ -50,16 +47,17 @@ main {
     transition: max-height 0.5s;
     cursor: pointer;
     border-radius: 5px;
-    color: #0e0e0e;
     letter-spacing: 1px;
 }
 
 .post-title-card {
     padding: 10px;
+    margin: 5px;
     border-radius: 5px;
-    background-color: #0e0e0e;
-    color: #ddd;
+    color: #000;
     width: fit-content;
+    box-shadow: 2px 2px 2px black,
+                0px 0px 2px black;
 }
 
 .post-title {
@@ -87,14 +85,13 @@ main {
 .post-content {
     line-height: 1.4em;
     padding: 10px;
-    background-color: #aaaaaa;
-    color: #0e0e0e;
+    color: #000;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 20px 5px;
 }
 
 .post-content > * {
-    margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 /*code builder*/
@@ -104,7 +101,7 @@ main {
 .code-container {
     padding: 10px;
     border-radius: 5px;
-    background-color: rgb(202, 202, 202);
+    background-color: #c7c7c7;
     width: fit-content;
 }
 
@@ -118,4 +115,9 @@ main {
 
 .bracket {
     color: black;
+}
+
+.clicked {
+    box-shadow: inset 2px 2px 2px black,
+                inset 0px 0px 2px black;
 }

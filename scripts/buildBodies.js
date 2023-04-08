@@ -8,6 +8,7 @@ export let buildBody = function(postIndex, postBody) {
         let childToBe = buildElement(postBody[i]);
         postContentDiv.appendChild(childToBe);
     }
+    postContentDiv.classList.add("clicked");
     postContainer.appendChild(postContentDiv);
 }
 
