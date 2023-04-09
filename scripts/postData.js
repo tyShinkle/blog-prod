@@ -16,9 +16,18 @@ export const postData = `[
                 "elementType":"code",
                 "content":[
                             {"type":"keyword", "content":"function "},
-                            {"type":"variable", "content":"test"},
+                            {"type":"function", "content":"test"},
                             {"type":"bracket", "content":"() "},
                             {"type":"bracket", "content":"{"},
+                            {"type":"newLine", "content":""},
+                            {"type":"indentation", "content":""},
+                            {"type":"variable", "content":"console"},
+                            {"type":"punctuation", "content":"."},
+                            {"type":"function", "content":"log"},
+                            {"type":"bracket", "content":"("},
+                            {"type":"data", "content":"\\"test\\""},
+                            {"type":"bracket", "content":")"},
+                            {"type":"punctuation", "content":";"},
                             {"type":"newLine", "content":""},
                             {"type":"bracket", "content":"}"}
                         ]

@@ -26,7 +26,7 @@ body {
 
 nav {
     position: relative;
-    margin: 20px 15px;
+    margin: 25px 15px;
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -91,7 +91,7 @@ nav {
 }
 
 .post-content > * {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 /*code builder*/
@@ -101,20 +101,37 @@ nav {
 .code-container {
     padding: 10px;
     border-radius: 5px;
-    background-color: #c7c7c7;
+    background-color: #2f2f2f;
     width: fit-content;
 }
 
-.keyword {
-    color:magenta;
+.function {
+    color: #70c9fd;
 }
 
-.variable {
-    color: royalblue;
+.keyword {
+    color: #d27efd;
+}
+
+.data {
+    color: #fc8e8e;
 }
 
 .bracket {
-    color: black;
+    color: rgb(252, 231, 110);
+}
+
+.indent-span {
+    display: inline-block;
+    min-width: 20px;
+}
+
+.punctuation {
+    color: white;
+}
+
+.variable {
+    color:#7cffbb;
 }
 
 .clicked {
