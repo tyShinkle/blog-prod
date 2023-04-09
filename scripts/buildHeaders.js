@@ -15,10 +15,10 @@ function addPostContainers(postIndex, postData) {
     let postTitleDiv = document.createElement("div");
     postDiv.classList.add("post");
     postDiv.setAttribute("id", "post" + postIndex);
-    postDiv.postIndex = postIndex;
-    postDiv.postData = postData;
-    postDiv.opened = false;
     postTitleDiv.classList.add("post-title-card");
+    postTitleDiv.postIndex = postIndex;
+    postTitleDiv.postData = postData;
+    postTitleDiv.opened = false;
     postTitleDiv.setAttribute("id", "postTitleCard" + postIndex);
     postDiv.appendChild(postTitleDiv);
     mainBody.appendChild(postDiv);
