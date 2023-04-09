@@ -27,8 +27,8 @@ body {
 
 nav {
     position: relative;
-    margin: 25px 15px;
-    padding: 10px;
+    margin: 25px 10px;
+    padding: 15px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
@@ -42,7 +42,7 @@ nav {
 }
 
 .post { 
-    margin: 20px 10px;
+    margin: 20px 5px;
     position: relative;
     font-size: 1rem;
     line-height: 1.6em;
@@ -54,7 +54,7 @@ nav {
 }
 
 .post-title-card {
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
     border-radius: 5px;
     width: fit-content;
@@ -89,7 +89,7 @@ nav {
 
 .post-content {
     line-height: 1.4em;
-    padding: 10px 10px 10px 10px;
+    padding: 15px;
     border-radius: 5px;
     margin: 20px 5px;
     background-color: #505050;
