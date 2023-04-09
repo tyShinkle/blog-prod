@@ -12,7 +12,7 @@ function toggle(e){
     let targetIndex = e.currentTarget.postIndex;
     let opened = e.currentTarget.opened;
     if(!opened){
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 30 + "px";
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 20 + "px";
         postHeaders[targetIndex].classList.add("clicked");
         e.currentTarget.opened = true;
     }

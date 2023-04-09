@@ -54,7 +54,7 @@ nav {
 }
 
 .post-title-card {
-    padding: 20px 10px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5px;
     width: fit-content;
@@ -89,14 +89,14 @@ nav {
 
 .post-content {
     line-height: 1.4em;
-    padding: 20px 10px;
+    padding: 10px;
     border-radius: 5px;
     margin: 20px 5px;
     background-color: #282828;
 }
 
 .post-content > * {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /*code builder*/
