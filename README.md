@@ -25,13 +25,15 @@
 # Content Management
 
 # TO DO
-- change search bar to div with icon and input 
-    - add event to input for toggling shadow
-- load tags / show tags
-- add tag click functionality  -> https://javascript.info/bubbling-and-capturing  
-- add search functionality   
-- add dark mode / color schemes
-- create / add menu icons (search, filter etc...)  
+- finish main color scheme   
+- finalize padding / margins and assoc. functions  
+- finish code color scheme   
 - footer  
-- content types (code / img) 
+- content types (code / img)  
+- 5 real posts  
+    - Introduction to HTML  
+    - Introduction to CSS  
+    - Introduction to Javascript  
+    - Introduction to Github
+    - Introduction to Web 3.0
 - blog-dev -> blog-test -> blog-prod  
