@@ -101,24 +101,24 @@ nav {
 .code-container {
     padding: 10px;
     border-radius: 5px;
-    background-color: #2f2f2f;
+    background-color: #272727;
     width: fit-content;
 }
 
 .function {
-    color: #70c9fd;
+    color: #ffaeae;
 }
 
 .keyword {
-    color: #d27efd;
-}
-
-.data {
-    color: #fc8e8e;
+    color: #ffdab9;
 }
 
 .bracket {
-    color: rgb(252, 231, 110);
+    color: #faffb8;
+}
+
+.data {
+    color: rgb(177, 255, 163);
 }
 
 .indent-span {
@@ -131,7 +131,7 @@ nav {
 }
 
 .variable {
-    color:#7cffbb;
+    color:#a7d7ff;
 }
 
 .clicked {
