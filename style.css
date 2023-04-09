@@ -48,7 +48,6 @@ nav {
     line-height: 1.6em;
     overflow:hidden;
     transition: max-height 0.5s;
-    cursor: pointer;
     border-radius: 5px;
     letter-spacing: 1px;
 }
@@ -63,6 +62,7 @@ nav {
                 2px 2px 1px black,
                 0px 0px 2px black;
     background-color: #282828;
+    cursor: pointer;
 }
 
 .post-title {
