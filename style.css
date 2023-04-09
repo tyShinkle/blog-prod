@@ -89,7 +89,7 @@ nav {
 
 .post-content {
     line-height: 1.4em;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
     margin: 20px 5px;
     background-color: #282828;
