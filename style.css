@@ -35,7 +35,7 @@ nav {
     letter-spacing: 1px;
     width: fit-content;
     background-color: #282828;
-    box-shadow: 2px 2px 4px black,
+    box-shadow: 2px 2px 1px black,
                 0px 0px 2px black;
 }
 
