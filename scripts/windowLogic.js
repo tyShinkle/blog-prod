@@ -8,7 +8,7 @@ export let empowerWindow = function(){
 
 let resetSizes = function() {
     for(let i = 0; i < posts.length; i++){
-        if(posts[i].opened){
+        if(postHeaders[i].opened){
             posts[i].style.maxHeight = postHeaders[i].offsetHeight + postBodies[i].offsetHeight + 30 + "px";
         }
         else{
