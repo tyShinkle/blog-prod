@@ -92,11 +92,12 @@ nav {
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
     margin: 20px 5px;
-    background-color: #444444;
+    background-color: #dcdcdc;
+    color: #282828;
 }
 
 .post-content > * {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /*code builder*/
