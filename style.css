@@ -113,19 +113,19 @@ nav {
 }
 
 .function {
-    color: #ffaeae;
+    color: #a0f5ff;
 }
 
 .keyword {
-    color: #ffdab9;
+    color: #a4ceff;
 }
 
 .bracket {
-    color: #faffb8;
+    color: #ffe1b0;
 }
 
 .data {
-    color: rgb(177, 255, 163);
+    color: rgb(255, 178, 178);
 }
 
 .indent-span {
@@ -138,7 +138,7 @@ nav {
 }
 
 .variable {
-    color:#a7d7ff;
+    color:#c4baff;
 }
 
 .clicked {
