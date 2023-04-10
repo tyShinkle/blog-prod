@@ -113,11 +113,11 @@ nav {
 }
 
 .keyword {
-    color: #ffb86c;
+    color: #ff79c6;
 }
 
 .function {
-    color: #ff79c6;
+    color: #50fa7b;
 }
 
 .variable {
@@ -129,20 +129,24 @@ nav {
 }
 
 .data {
-    color: #d47b7b;
+    color: #fafa8c;
 }
 
 .tag{
-    color: #64d0de;
+    color: #8be9fd;
+}
+
+.punctuation {
+    color: #fff;
+}
+
+.text-html {
+    color: #fff;
 }
 
 .indent-span {
     display: inline-block;
     min-width: 20px;
-}
-
-.punctuation {
-    color: #fff;
 }
 
 .clicked {
