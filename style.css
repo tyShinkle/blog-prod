@@ -113,23 +113,23 @@ nav {
 }
 
 .keyword {
-    color: #e974e9;
+    color: #ffb86c;
 }
 
 .function {
-    color: #8f8ffa;
+    color: #ff79c6;
 }
 
 .variable {
-    color: #fbaac0;
+    color: #bd93f9;
 }
 
 .bracket {
-    color: #f8f571;
+    color: white;
 }
 
 .data {
-    color: #d8ddff;
+    color: #d47b7b;
 }
 
 .indent-span {
