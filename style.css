@@ -35,9 +35,10 @@ nav {
     letter-spacing: 1px;
     width: fit-content;
     background-color: #282828;
-    box-shadow: -1px -1px 0px rgb(84, 84, 84),
+    box-shadow: -1px -1px 0px #aaa,
                 1px 1px 1px black,
-                2px 2px 1px black,
+                2px 2px 2px black,
+                3px 3px 6px black,
                 0px 0px 2px black;
 }
 
@@ -57,9 +58,10 @@ nav {
     margin: 5px;
     border-radius: 5px;
     width: fit-content;
-    box-shadow: -1px -1px 0px rgb(84, 84, 84),
+    box-shadow: -1px -1px 0px #aaa,
                 1px 1px 1px black,
-                2px 2px 1px black,
+                2px 2px 2px black,
+                3px 3px 6px black,
                 0px 0px 2px black;
     background-color: #282828;
     cursor: pointer;
@@ -140,7 +142,8 @@ nav {
 }
 
 .clicked {
-    box-shadow: inset -1px -1px 0px rgb(84, 84, 84),
+    box-shadow: inset -1px -1px 0px #aaa,
                 inset 2px 2px 2px black,
+                inset 3px 3px 6px black,
                 inset 0px 0px 2px black;
 }
