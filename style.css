@@ -112,20 +112,24 @@ nav {
     width: fit-content;
 }
 
-.function {
-    color: #bf84e2;
+.keyword {
+    color: #8f8ffa;
 }
 
-.keyword {
-    color: #feb236;
+.function {
+    color: #e974e9;
+}
+
+.variable {
+    color: #7ee77e;
 }
 
 .bracket {
-    color: #ff7b7b;
+    color: #f8f571;
 }
 
 .data {
-    color: #73b2fa;
+    color: #fbaac0;
 }
 
 .indent-span {
@@ -135,10 +139,6 @@ nav {
 
 .punctuation {
     color: white;
-}
-
-.variable {
-    color:#5bd5c4;
 }
 
 .clicked {
