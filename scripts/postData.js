@@ -18,7 +18,7 @@ export const postData = `[
                 ]
             },
             {"elementType":"paragraph", "content":"If the above element were to be inserted into the body of an HTML document and opened by a browser the browser would 'interpret' it with a certain set of rules used for paragraph elements. We're getting a bit ahead of ourselves though. What is an HTML document? How do browsers interpret these documents?"},
-            {"elementType":"heading", "content":"The HTML document"}
+            {"elementType":"heading", "content":"The HTML Document"}
         ]
     },
     {
