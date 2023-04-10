@@ -132,6 +132,10 @@ nav {
     color: #d47b7b;
 }
 
+.tag{
+    color: #64d0de;
+}
+
 .indent-span {
     display: inline-block;
     min-width: 20px;
