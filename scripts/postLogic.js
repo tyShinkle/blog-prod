@@ -5,6 +5,7 @@ let postContent = document.getElementsByClassName("post-content");
 export let empowerPosts = function() {
     for(let i = 0; i < postContainers.length; i++){
         postHeaders[i].addEventListener("click", toggle, false);
+        postHeaders[i].postIndex = i;
     }
 }
 
