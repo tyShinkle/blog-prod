@@ -55,9 +55,3 @@ function addDate(postIndex, postData) {
     postDate.textContent = postData.postDate;
     targetPostTitleCard.appendChild(postDate);
 }
-
-//set max height for open / close
-function setMaxHeight(postIndex) {
-    let p = document.querySelector("#post" + postIndex);
-    p.style.maxHeight = p.offsetHeight + "px";
-}
