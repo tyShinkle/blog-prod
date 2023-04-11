@@ -1,186 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tyShinkle.blog</title>
-    <link rel="stylesheet" href="./dist/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav>
-      <h1>tyShinkle.blog</h1>
-    </nav>
-    <main>
-      <div class="post" id="post0" style="max-height: 127px">
-        <div class="post-title-card" id="postTitleCard0">
-          <div class="post-title">Introduction to HTML</div>
-          <div class="post-tags"><div class="post-tag">#html</div></div>
-          <div class="post-date">04.10.2023</div>
-        </div>
-        <div class="post-content clicked" id="postContentDiv0">
-          <h3>What is HTML?</h3>
-          <p>
-            HTML is an initialism which stands for Hypertext Markup Language and
-            it is the foundation upon which web pages are built. It is used to
-            categorize and attribute properties to data. Data in this case may
-            be text, images, videos or audio. We categorize these data types
-            with the use of 'tags'. Tags look like this...
-          </p>
-          <div class="code-container">
-            <span class="tag">&lt;p&gt;&lt;/p&gt;</span>
-          </div>
-          <p>
-            The set of tags above are known in HTML as a paragraph element,
-            there are many elements which help describe the structure of our web
-            pages. The above tags are empty though, usually paragraph tags are
-            used to turn a string of text into an HTML paragraph element like
-            so...
-          </p>
-          <div class="code-container">
-            <span class="tag">&lt;p&gt;</span
-            ><span class="text-html">Hello!</span
-            ><span class="tag">&lt;/p&gt;</span>
-          </div>
-          <p>
-            If the above element were to be inserted into the body of an HTML
-            document and opened by a browser the browser would 'interpret' it
-            with a certain set of rules used for paragraph elements. We're
-            getting a bit ahead of ourselves though. What is an HTML document?
-            How do browsers interpret these documents?
-          </p>
-          <h3>The HTML Document</h3>
-        </div>
-      </div>
-      <div class="post" id="post1" style="max-height: 127px">
-        <div class="post-title-card" id="postTitleCard1">
-          <div class="post-title">
-            Build a CRUD API with Lambda Functions and DynamoDB
-          </div>
-          <div class="post-tags">
-            <div class="post-tag">#node</div>
-            <div class="post-tag">#aws</div>
-            <div class="post-tag">#api</div>
-            <div class="post-tag">#test</div>
-          </div>
-          <div class="post-date">03.31.2023</div>
-        </div>
-        <div class="post-content clicked" id="postContentDiv1">
-          <h3>Step One: Create a DynamoDB Table</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="code-container">
-            <span class="keyword">function </span
-            ><span class="function">test</span><span class="bracket">() </span
-            ><span class="bracket">{</span><br /><span
-              class="indent-span"
-            ></span
-            ><span class="variable">console</span
-            ><span class="punctuation">.</span><span class="function">log</span
-            ><span class="bracket">(</span><span class="data">"test"</span
-            ><span class="bracket">)</span><span class="punctuation">;</span
-            ><br /><span class="bracket">}</span>
-          </div>
-        </div>
-      </div>
-      <div class="post" id="post2" style="max-height: 127px">
-        <div class="post-title-card" id="postTitleCard2">
-          <div class="post-title">Git Revert Examples</div>
-          <div class="post-tags">
-            <div class="post-tag">#git</div>
-            <div class="post-tag">#test</div>
-          </div>
-          <div class="post-date">04.01.2023</div>
-        </div>
-        <div class="post-content clicked" id="postContentDiv2">
-          <h3>Revert a Single File</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="post" id="post3" style="max-height: 127px">
-        <div class="post-title-card" id="postTitleCard3">
-          <div class="post-title">Building a LAMP Server at Home</div>
-          <div class="post-tags">
-            <div class="post-tag">#linux</div>
-            <div class="post-tag">#apache</div>
-            <div class="post-tag">#sql</div>
-            <div class="post-tag">#php</div>
-            <div class="post-tag">#test</div>
-          </div>
-          <div class="post-date">04.02.2023</div>
-        </div>
-        <div class="post-content clicked" id="postContentDiv3">
-          <h3>Step One: Grab an Old Laptop / PC</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="post" id="post4" style="max-height: 127px">
-        <div class="post-title-card" id="postTitleCard4">
-          <div class="post-title">Mastering CSS Grid</div>
-          <div class="post-tags">
-            <div class="post-tag">#css</div>
-            <div class="post-tag">#grid</div>
-            <div class="post-tag">#test</div>
-          </div>
-          <div class="post-date">04.04.2023</div>
-        </div>
-        <div class="post-content clicked" id="postContentDiv4">
-          <h3>Why use CSS Grid?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-    </main>
-    <script type="module" src="dist/bundle.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tyshinkle.blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <h1>tyShinkle.blog</h1>
+  </nav>
+  <main>
+  </main>
+  <script type="module" src="scripts\script.js"></script>
+</body>
 </html>
