@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    padding: --safe-top --safe-right --safe-bottom --safe-left;
+    padding: var(--safe-top) var(--safe-right) var(--safe-bottom)  var(--safe-left);
     max-width: 50em;
     margin: auto;
     font-family: 'Roboto';

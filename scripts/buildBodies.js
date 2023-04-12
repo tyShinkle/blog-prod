@@ -1,9 +1,9 @@
 //create post body 
 export let buildBody = function(postIndex, postBody) {
-    let postContainer = document.querySelector("#post" + postIndex);
+    let postContainer = document.querySelector("#post-" + postIndex);
     let postContentDiv = document.createElement("div");
     postContentDiv.classList.add("post-content");
-    postContentDiv.setAttribute("id", "postContentDiv" + postIndex);
+    postContentDiv.setAttribute("id", "post-content-div-" + postIndex);
     for (let i = 0; i < postBody.length; i++) {
         let childToBe = buildElement(postBody[i]);
         postContentDiv.appendChild(childToBe);
@@ -46,7 +46,6 @@ function buildCode(el) {
     codeContainer.classList.add("code-container");
     for(let i = 0; i < el.content.length; i++){
         if(el.content[i].type == "newLine"){
-            console.log("new line!")
             codeContainer.appendChild(document.createElement("br"));
         } 
         else if(el.content[i].type == "indentation"){

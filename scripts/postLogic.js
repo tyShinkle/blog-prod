@@ -1,6 +1,6 @@
 let postContainers = document.getElementsByClassName("post");
 let postHeaders = document.getElementsByClassName("post-title-card");
-let postContent = document.getElementsByClassName("post-content");
+let postBodies = document.getElementsByClassName("post-content");
 
 export let empowerPosts = function() {
     for(let i = 0; i < postContainers.length; i++){
@@ -12,7 +12,7 @@ function toggle(e){
     let targetIndex = e.currentTarget.postIndex;
     let opened = e.currentTarget.opened;
     if(!opened){
-        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postContent[targetIndex].offsetHeight + 30 + "px";
+        postContainers[targetIndex].style.maxHeight = postHeaders[targetIndex].offsetHeight + postBodies[targetIndex].offsetHeight + 30 + "px";
         postHeaders[targetIndex].classList.add("clicked");
         e.currentTarget.opened = true;
     }

@@ -6,5 +6,3 @@ import { empowerWindow } from "./windowLogic.js";
 buildPosts();
 empowerPosts();
 empowerWindow();
-
-console.log("Hello!");

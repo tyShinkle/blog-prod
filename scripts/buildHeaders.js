@@ -1,4 +1,4 @@
-let mainBody = document.getElementsByTagName("main")[0];
+let mainEl = document.getElementsByTagName("main")[0];
 
 //loadPostHeaders
 export function buildHeader(postIndex, postData) {
@@ -14,19 +14,19 @@ function addPostContainers(postIndex, postData) {
     let postDiv = document.createElement("div");
     let postTitleDiv = document.createElement("div");
     postDiv.classList.add("post");
-    postDiv.setAttribute("id", "post" + postIndex);
+    postDiv.setAttribute("id", "post-" + postIndex);
     postTitleDiv.classList.add("post-title-card");
     postTitleDiv.postIndex = postIndex;
     postTitleDiv.postData = postData;
     postTitleDiv.opened = false;
-    postTitleDiv.setAttribute("id", "postTitleCard" + postIndex);
+    postTitleDiv.setAttribute("id", "post-title-card-" + postIndex);
     postDiv.appendChild(postTitleDiv);
-    mainBody.appendChild(postDiv);
+    mainEl.appendChild(postDiv);
 }
 
 //add title to post
 function addTitle(postIndex, postData) {
-    let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
+    let targetPostTitleCard = document.querySelector("#post-title-card-" + postIndex);
     let postTitle = document.createElement("div");
     postTitle.classList.add("post-title");
     postTitle.textContent = postData.postTitle;
@@ -35,7 +35,7 @@ function addTitle(postIndex, postData) {
 
 //add topic tags to post
 function addTags(postIndex, postData) {
-    let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
+    let targetPostTitleCard = document.querySelector("#post-title-card-" + postIndex);
     let postTags = document.createElement("div");
     postTags.classList.add("post-tags");
     for (let i = 0; i < postData.postTags.length; i++){
@@ -49,7 +49,7 @@ function addTags(postIndex, postData) {
 
 //add date to post card
 function addDate(postIndex, postData) {
-    let targetPostTitleCard = document.querySelector("#postTitleCard" + postIndex);
+    let targetPostTitleCard = document.querySelector("#post-title-card-" + postIndex);
     let postDate = document.createElement("div");
     postDate.classList.add("post-date");
     postDate.textContent = postData.postDate;
@@ -58,6 +58,6 @@ function addDate(postIndex, postData) {
 
 //set max height for open / close
 function setMaxHeight(postIndex) {
-    let p = document.querySelector("#post" + postIndex);
+    let p = document.querySelector("#post-" + postIndex);
     p.style.maxHeight = p.offsetHeight + "px";
 }
