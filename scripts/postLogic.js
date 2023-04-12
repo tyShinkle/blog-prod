@@ -5,8 +5,6 @@ let postContent = document.getElementsByClassName("post-content");
 export let empowerPosts = function() {
     for(let i = 0; i < postContainers.length; i++){
         postHeaders[i].addEventListener("click", toggle, false);
-        postHeaders[i].postIndex = i;
-        setMaxHeight(i);
     }
 }
 
@@ -23,13 +21,6 @@ function toggle(e){
         postHeaders[targetIndex].classList.remove("clicked");
         e.currentTarget.opened = false;
     }
-}
-
-//set max height for open / close
-function setMaxHeight(postIndex) {
-    let post = document.querySelector("#post" + postIndex);
-    let postHeader = document.querySelector("#postTitleCard" + postIndex);
-    post.style.maxHeight = postHeader.offsetHeight + 10 + "px";
 }
 
 /*
