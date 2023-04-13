@@ -42,12 +42,12 @@ body {
 }
 
 nav {
-    margin: 20px 10px;
+    margin: 25px 10px;
     position: relative;
     font-weight: bold;
 }
 
-.navTitle {
+#navTitle {
     cursor: pointer;
 }
 
