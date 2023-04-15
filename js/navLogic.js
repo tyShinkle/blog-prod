@@ -91,8 +91,8 @@ function searchPosts() {
 function updateMain(matches){
     main.innerHTML = "";
     for(let i=0; i<matches.length; i++){
-        buildHeader(matches[i], posts[matches[i]]);
-        buildBody(matches[i], posts[matches[i]].postBody);
+        buildHeader(i, posts[matches[i]]);
+        buildBody(i, posts[matches[i]].postBody);
         empowerPosts();
     }
 }
